@@ -4,6 +4,12 @@ title = 'ALPHASE'
 theme = 'archie'
 copyright = "© BuddyHeartO"
 
+# Image Cache
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
 # Social Tags
 
 [[params.social]]
