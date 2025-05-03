@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>It on ALPHASE</title>
+    <link>https://example.org/tags/it/</link>
+    <description>Recent content in It on ALPHASE</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>© BuddyHeartO</copyright>
+    <lastBuildDate>Sat, 03 May 2025 11:42:00 +0700</lastBuildDate>
+    <atom:link href="https://example.org/tags/it/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Home Lab</title>
+      <link>https://example.org/posts/home-lab/</link>
+      <pubDate>Sat, 03 May 2025 11:42:00 +0700</pubDate>
+      <guid>https://example.org/posts/home-lab/</guid>
+      <description>&lt;h2 id=&#34;background&#34;&gt;Background&lt;/h2&gt;&#xA;&lt;p&gt;I had a friend whom I lent my old laptop to. It was a Thinkpad X260 that I bought 4-5 years ago. He gave it back to me because of some issues: keyboard is typing on its own, and it is not responsive. In the first place, soon after I got the laptop first hand 4 years ago, I replaced the keyboard. Its layout was Japanese and I felt uneasy typing with Japanese keyboard. So, I put the old keyboard sparepart in a box, used the laptop for a while, even broke the &lt;em&gt;backspace&lt;/em&gt; key, and lent it to my friend. As soon as he returned the laptop, I checked and confirmed the issue. I wanted to tinker in Linux and that kind of stuff so I thought that using that old laptop would be a good idea. I replaced the keyboard to the old Japanese keyboard, and unfortunately the issue remained. &amp;ldquo;It must be the connector&amp;rdquo;, I thought. Even though I had a full-size membrane keyboard laying around, I still didn&amp;rsquo;t think using a &lt;strong&gt;portable&lt;/strong&gt; laptop with a &lt;strong&gt;full-size&lt;/strong&gt; keyboard is a good idea, it would occupy much space.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
