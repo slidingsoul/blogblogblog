@@ -1,0 +1,27 @@
++++
+date = '2025-05-04T10:47:59+07:00'
+draft = false
+title = 'Reading Journey'
+tags = ['indonesia', 'reading']
++++
+![](https://assets-a1.kompasiana.com/items/album/2025/01/02/doomscrolling-6776a71934777c42f3161225.jpg?t=o&v=780)
+## Tinta, Kertas, Jilid
+Buku tidak lebih dari sekadar tinta yang tergores di atas setumpuk kertas. Tumpukan kertas itu dijilid jadi satu. Buku itu mahal. Seumur-umur hidupku aku tidak pernah menemukan novel serta *textbook* dengan harga di bawah Rp50.000. Belum lagi, aksi membacanya itu. Bola mata harus berlari dari kiri ke kanan, jari kadang harus dijilat untuk membalik lembarannya. Membawa buku juga sulit. Kau harus menyediakan ruang yang cukup di tasmu (kalau kau memang mau membawa tas), dan aku bahkan tidak pernah melihat buku yang bisa masuk ke dalam saku dan dioperasikan dengan satu tangan. Mengapa aku harus membaca buku meski ada alternatif lain yang lebih baik?
+
+## Layar Sentuh
+Ponsel sekarang sudah murah. Oh kau bilang mahal? Ya, kalau kau bandingkan dengan buku fisik biasa. Tapi ponsel *pintar* lebih dari buku, Bung! Kau bisa melakukan banyak hal, berhitung, berkomunikasi, berdendang dari musik radio, bahkan dia mampu mengalihkan perhatianmu dari dunia ini! Lihat saja, jempolmu itu, berapa kali dia bergerak atas-bawah atas-bawah setiap 30 detik sekali? Kau bisa membawanya di sakumu dan kau tidak perlu susah-susah untuk mengganti konten yang ingin kau nikmati. Yang ingin kau nikmati? Ah, itu bahkan kau tidak perlu memikirkannya. Sekarang kau hanya perlu buka 1 aplikasi (otakmu pasti sudah terprogram untuk itu), lalu konten *yang kau pasti akan nikmati itu* akan tersedia untukmu. 
+
+## Pembunuh Senyap
+Oke mungkin aku terdengar sarkastik untuk Bab 1 dan 2. Tapi ini poinku. Membaca buku itu sulit, terdengar biasa saja bahkan kuno. Sedangkan menikmati konten digital di ponsel pintar itu mudah, tetapi bukan tanpa risiko. Aku singgah selama kurang lebih 2 tahun di rumah pamanku di Surabaya. Perbedaan yang signifikan antara rumahku dan rumah pamanku adalah...di rumah pamanku ada Wi-Fi-nya. Aku bisa terhubung ke jaringan selama 24/7 tanpa takut kehabisan kuota. Itu membuatku jatuh ke dalam jurang video pendek. Aku bisa melakukan *scrolling* selama 6 sampai 8 jam sehari, menonton YouTube tidak kenal waktu, dan begadang menonton animasi Jepang. Aku mengonsumsi konten yang membuatku mati rasa, aku tidak menikmatinya tetapi setidaknya aku terdistraksi dari duniaku. Ketika HP-ku mati, aku beralih ke *laptop* dan duduk di atas meja. Ketika HP-ku sudah terisi, aku kembali rebahan di atas kasur dan kembali *scrolling*. Aku hanya berhenti ketika besok ada ulangan, jam dinding menunjukkan sudah larut malam, kebutuhan toilet, dan juga makan. Banyak aspek dari hidupku yang telah dirampas oleh keinginanku untuk mengonsumsi konten. Hidupku sama sekali tidak bermakna saat itu. *Sure*, aku masih dapat dianggap normal. Aku masih makan bersama Paman dan Bibiku, menjawab telepon Ibu dan Ayahku, berteman di sekolah. Sekolah dan nilaiku juga aman...kurang lebihnya.
+
+## Perang Tak Imbang
+Kalau kalian mengenalku, mungkin kalian akan kaget karena aku tidak menunjukkan tanda-tanda sakit jiwa. Namun, hidupku cukup berantakan saat itu. Setelah menjalani banyak hal...aku mengetahui sesuatu bahwa aku tidak sendirian. Aplikasi sosial media dirancang supaya penggunanya mengonsumsi konten, sebanyak mungkin. Mereka selalu punya psikolog, desainer antarmuka (*UX designer*), bahkan punya tim riset tersendiri untuk membuat kita tetap menatap layar. Ada yang mulai beraksi untuk menghentikan roda lingkaran setan ini, akun seperti [Close IG Hourly](https://www.instagram.com/close.ig.hourly/), dan tren seperti *Touch Some Grass*. 
+
+## Resolusi
+Aku mulai mengenal buku, sebuah novel lebih tepatnya, dari temanku, Rafie. Entah dari mana, aku lupa jalur percakapannya tetapi dia melontarkan penulis yang bernama *Ilana Tan*. **Dan kebetulan**, (aku sebenarnya tidak percaya kebetulan tetapi anggap saja begitu), sepupuku punya satu buku karya Ilana Tan. Aku meminjamnya dan membacanya. Judulnya *In A Blue Moon*, sebuah cerita fiksi romantis. Tiga ratus dua puluh halaman berlalu begitu saja dalam satu hari. Namun bedanya aku merasa lebih hidup. Aku tidak merasa bersalah setelah menghabiskan satu hariku dengan membaca novel yang baru kuterima tiga hari sebelumnya. Aku menikmati banyak hal...bukan karena aku hanya menyantap apa yang disajikan di atas meja makan tetapi aku berpindah dari desa ke desa untuk menikmati makanan khasnya. Dari situ aku tahu...buku dapat membuatku jadi lebih baik, meski mahal dan sulit.
+
+## Bukan Tentang Diriku Saja
+*"Hey, Bud. Tapi aku masih scrolling IG Reels dan YT Shorts di aktivitasku sehari-hari. Aku tidak merasa kecanduan dan aku masih punya kehidupan yang normal."* Ya, aku berbeda dengan kalian. Aku lebih mudah terperosok dalam jurang karena aku seringkali sendirian. Kalian tidak harus membaca buku. Toh, informasi yang berguna dan hiburan tetap kalian dapat nikmati. Aku ingin mengajak kalian untuk berefleksi, apa kalian benar-benar terhibur? Apakah informasi yang kalian tonton itu benar-benar dapat kalian ingat? Kalau iya, *fine*, aku kalah. Kalau kalian merasa ragu, cobalah cari buku dan bacalah. 
+
+#### P.S.
+P.S. berarti *Post Scriptum*, biasanya ditulis di akhir surat tentang sesuatu yang terlupa. Aku menemukan sosial media di mana orang-orang membagikan buku yang mereka baca. Kalian bisa menambahkan aku sebagai teman di [sini](https://hardcover.app/@slidingsoul). Thanks!

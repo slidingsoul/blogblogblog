@@ -3,7 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://example.org/</loc>
-    <lastmod>2025-05-03T11:42:00+07:00</lastmod>
+    <lastmod>2025-05-04T10:47:59+07:00</lastmod>
+  </url><url>
+    <loc>https://example.org/tags/indonesia/</loc>
+    <lastmod>2025-05-04T10:47:59+07:00</lastmod>
+  </url><url>
+    <loc>https://example.org/posts/</loc>
+    <lastmod>2025-05-04T10:47:59+07:00</lastmod>
+  </url><url>
+    <loc>https://example.org/tags/reading/</loc>
+    <lastmod>2025-05-04T10:47:59+07:00</lastmod>
+  </url><url>
+    <loc>https://example.org/posts/reading-journey/</loc>
+    <lastmod>2025-05-04T10:47:59+07:00</lastmod>
+  </url><url>
+    <loc>https://example.org/tags/</loc>
+    <lastmod>2025-05-04T10:47:59+07:00</lastmod>
   </url><url>
     <loc>https://example.org/tags/english/</loc>
     <lastmod>2025-05-03T11:42:00+07:00</lastmod>
@@ -12,12 +27,6 @@
     <lastmod>2025-05-03T11:42:00+07:00</lastmod>
   </url><url>
     <loc>https://example.org/tags/it/</loc>
-    <lastmod>2025-05-03T11:42:00+07:00</lastmod>
-  </url><url>
-    <loc>https://example.org/posts/</loc>
-    <lastmod>2025-05-03T11:42:00+07:00</lastmod>
-  </url><url>
-    <loc>https://example.org/tags/</loc>
     <lastmod>2025-05-03T11:42:00+07:00</lastmod>
   </url><url>
     <loc>https://example.org/about/</loc>

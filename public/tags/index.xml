@@ -7,8 +7,22 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© BuddyHeartO</copyright>
-    <lastBuildDate>Sat, 03 May 2025 11:42:00 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 04 May 2025 10:47:59 +0700</lastBuildDate>
     <atom:link href="https://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Indonesia</title>
+      <link>https://example.org/tags/indonesia/</link>
+      <pubDate>Sun, 04 May 2025 10:47:59 +0700</pubDate>
+      <guid>https://example.org/tags/indonesia/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Reading</title>
+      <link>https://example.org/tags/reading/</link>
+      <pubDate>Sun, 04 May 2025 10:47:59 +0700</pubDate>
+      <guid>https://example.org/tags/reading/</guid>
+      <description></description>
+    </item>
     <item>
       <title>English</title>
       <link>https://example.org/tags/english/</link>
