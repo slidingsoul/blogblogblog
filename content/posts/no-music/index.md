@@ -1,6 +1,6 @@
 +++
 date = '2025-05-14T19:49:45+07:00'
-draft = true
+draft = false
 title = 'No Music'
 +++
 ![](https://mir-s3-cdn-cf.behance.net/project_modules/source/961af157823223.59e6a05500e5e.gif)
