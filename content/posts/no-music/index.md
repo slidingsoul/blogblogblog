@@ -2,6 +2,7 @@
 date = '2025-05-14T19:49:45+07:00'
 draft = false
 title = 'No Music'
+tags = ['english', 'lifestyle']
 +++
 ![](https://mir-s3-cdn-cf.behance.net/project_modules/source/961af157823223.59e6a05500e5e.gif)
 ## The Silent Voice
