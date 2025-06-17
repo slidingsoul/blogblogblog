@@ -1,7 +1,7 @@
 +++
 date = '2025-05-14T19:49:45+07:00'
 draft = false
-title = 'No Music'
+title = 'No More No Music'
 tags = ['english', 'lifestyle']
 +++
 ![](https://mir-s3-cdn-cf.behance.net/project_modules/source/961af157823223.59e6a05500e5e.gif)
@@ -13,3 +13,12 @@ Before easy access to the internet, I used to download music I liked. I just had
 Things completely changed when I decided to try **Spotify**. It brought a groundbreaking change in my music-listening activity. It was a pandemic season back then and all of my classes in Senior High School were held online. Boy, oh boy, I listened to music every time I used my laptop/PC. I didn't even care if it was an exam, **very important learning session** or just a seminar, whatever happened, I thought I was okay if I wear my earphone with music blasting to my ears. I was hardwired to double-click Spotify on my desktop whenever I open my device, plug in an earphone, and start jamming. Even better (so I thought), Spotify has this fantastic recommendation feature where I could find songs similar to those in my playlist, how cool is that?
 ## Change of Heart
 Over the years, I became aware that I had been more emotional, agitated, and unable to keep my focus for an extended amount of time (I still can't even focus without my pomodoro timer). Aside from doom-scrolling, I hypothesized that *excessively* listening to music caused it. Therefore, I decided to take a break, for an indefinite amount of time. It has been about 1 month now and...I do feel a little bit better. I can hear what other people talk about without asking them to repeat it and I have never been feeling this calm. Whenever the urge creeps into my head, I divert it by listening to podcasts, and white noise. I am planning to continue on because well...it keeps getting better day by day.
+## **Change of Heart Number 2**
+> Edit on 17th June 2025
+
+I WAS WRONG. IT'S A TERRIBLE IDEA. SORRY GUYS. During about 2 months to my music abstinence, I kinda lost myself. I'm so tired because of my internship and thesis and I don't have any short form of entertainment. Now I want to share to a few songs I like to listen to
+- "Jika Bersamamu" by Timun Jelita
+- "EVERYTHING" by The Black Skirts
+- "Aruarian Dance" by Nujabes
+- "What Is Love?" by TWICE (yes)
+- "Kembali Bertahan" by Ungu (heck yeah)

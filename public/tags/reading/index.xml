@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Reading on ALPHASE</title>
-    <link>https://example.org/tags/reading/</link>
+    <link>http://localhost:1313/tags/reading/</link>
     <description>Recent content in Reading on ALPHASE</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© BuddyHeartO</copyright>
     <lastBuildDate>Sun, 04 May 2025 10:47:59 +0700</lastBuildDate>
-    <atom:link href="https://example.org/tags/reading/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/reading/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Reading Journey</title>
-      <link>https://example.org/posts/reading-journey/</link>
+      <link>http://localhost:1313/posts/reading-journey/</link>
       <pubDate>Sun, 04 May 2025 10:47:59 +0700</pubDate>
-      <guid>https://example.org/posts/reading-journey/</guid>
+      <guid>http://localhost:1313/posts/reading-journey/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://assets-a1.kompasiana.com/items/album/2025/01/02/doomscrolling-6776a71934777c42f3161225.jpg?t=o&amp;amp;v=780&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;tinta-kertas-jilid&#34;&gt;Tinta, Kertas, Jilid&lt;/h2&gt;&#xA;&lt;p&gt;Buku tidak lebih dari sekadar tinta yang tergores di atas setumpuk kertas. Tumpukan kertas itu dijilid jadi satu. Buku itu mahal. Seumur-umur hidupku aku tidak pernah menemukan novel serta &lt;em&gt;textbook&lt;/em&gt; dengan harga di bawah Rp50.000. Belum lagi, aksi membacanya itu. Bola mata harus berlari dari kiri ke kanan, jari kadang harus dijilat untuk membalik lembarannya. Membawa buku juga sulit. Kau harus menyediakan ruang yang cukup di tasmu (kalau kau memang mau membawa tas), dan aku bahkan tidak pernah melihat buku yang bisa masuk ke dalam saku dan dioperasikan dengan satu tangan. Mengapa aku harus membaca buku meski ada alternatif lain yang lebih baik?&lt;/p&gt;</description>
     </item>
   </channel>
