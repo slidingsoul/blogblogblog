@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html><head lang="en"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Home Lab Revamp - ALPHASE</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Dibuat di Surga
+Aku memutuskan untuk merombak setup home-lab ku. Kenapa? Karena ada banyak conflict antara service yang berjalan. Aku mencoba memasang Pi-Hole untuk eksperimen DNS dan Ad-Blocker tapi ternyata itu conflict dengan Apache Web Server. Aku tidak mau mematikan Apache karena FreshRSS, Nextcloud berjalan di atas itu.
+Alasan yang kedua adalah aku ingin melakukan ekspansi untuk storage. Thinkpad X260 serverku sekarang memiliki &ldquo;hanya&rdquo; 128 GB. Aku berencana untuk membuat SMB dan memindahkan banyak film dari PC-ku (sekitar 87.7 GB, 56 film) untuk ditonton dengan streaming via Jellyfin. Kenapa engga streaming pakai website biasa aja? Jawabannya karena ada risiko bakal patah-patah. Aku juga berencana melakukan banyak hal seperti mendownload otomatis film via torrent ke serverku jadi aku tidak perlu menyalakan PC-ku dan menunggu proses download selesai." />
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content="http://localhost:1313/posts/home-lab-revamp/">
+  <meta property="og:site_name" content="ALPHASE">
+  <meta property="og:title" content="Home Lab Revamp">
+  <meta property="og:description" content="Dibuat di Surga Aku memutuskan untuk merombak setup home-lab ku. Kenapa? Karena ada banyak conflict antara service yang berjalan. Aku mencoba memasang Pi-Hole untuk eksperimen DNS dan Ad-Blocker tapi ternyata itu conflict dengan Apache Web Server. Aku tidak mau mematikan Apache karena FreshRSS, Nextcloud berjalan di atas itu.
+Alasan yang kedua adalah aku ingin melakukan ekspansi untuk storage. Thinkpad X260 serverku sekarang memiliki “hanya” 128 GB. Aku berencana untuk membuat SMB dan memindahkan banyak film dari PC-ku (sekitar 87.7 GB, 56 film) untuk ditonton dengan streaming via Jellyfin. Kenapa engga streaming pakai website biasa aja? Jawabannya karena ada risiko bakal patah-patah. Aku juga berencana melakukan banyak hal seperti mendownload otomatis film via torrent ke serverku jadi aku tidak perlu menyalakan PC-ku dan menunggu proses download selesai.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-06-18T00:17:11+07:00">
+    <meta property="article:modified_time" content="2025-06-18T00:17:11+07:00">
+    <meta property="article:tag" content="Indonesia">
+    <meta property="article:tag" content="It">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Home Lab Revamp">
+  <meta name="twitter:description" content="Dibuat di Surga Aku memutuskan untuk merombak setup home-lab ku. Kenapa? Karena ada banyak conflict antara service yang berjalan. Aku mencoba memasang Pi-Hole untuk eksperimen DNS dan Ad-Blocker tapi ternyata itu conflict dengan Apache Web Server. Aku tidak mau mematikan Apache karena FreshRSS, Nextcloud berjalan di atas itu.
+Alasan yang kedua adalah aku ingin melakukan ekspansi untuk storage. Thinkpad X260 serverku sekarang memiliki “hanya” 128 GB. Aku berencana untuk membuat SMB dan memindahkan banyak film dari PC-ku (sekitar 87.7 GB, 56 film) untuk ditonton dengan streaming via Jellyfin. Kenapa engga streaming pakai website biasa aja? Jawabannya karena ada risiko bakal patah-patah. Aku juga berencana melakukan banyak hal seperti mendownload otomatis film via torrent ke serverku jadi aku tidak perlu menyalakan PC-ku dan menunggu proses download selesai.">
+
+        <link href="http://localhost:1313/css/fonts.11a1877508139eac0b5b4852ceb110c35641b3533321e66e39149e901ed5756b.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/main.e08e3d47ef734c0d298ed0fb46ed50640341570139eb362f34ac2720f01a4f58.css" />
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="http://localhost:1313/">ALPHASE</a>
+	</div>
+	<nav>
+		
+		<a href="/">Home</a>
+		
+		<a href="/posts">All Posts</a>
+		
+		<a href="/about">About</a>
+		
+		<a href="/tags">Tags</a>
+		
+		
+	</nav>
+</header>
+
+<main>
+  <article>
+    <div class="post-container">
+      
+      <div class="post-content">
+        <div class="title">
+          <h1 class="title">Home Lab Revamp</h1>
+          <div class="meta">Posted on Jun 18, 2025 <span class="draft-label">DRAFT</span> </div>
+        </div>
+        
+        <section class="body">
+          <h2 id="dibuat-di-surga">Dibuat di Surga</h2>
+<p>Aku memutuskan untuk merombak <em>setup</em> home-lab ku. Kenapa? Karena ada banyak conflict antara service yang berjalan. Aku mencoba memasang Pi-Hole untuk eksperimen DNS dan <em>Ad-Blocker</em> tapi ternyata itu conflict dengan Apache Web Server. Aku tidak mau mematikan Apache karena FreshRSS, Nextcloud berjalan di atas itu.</p>
+<p>Alasan yang kedua adalah aku ingin melakukan ekspansi untuk <em>storage</em>. Thinkpad X260 serverku sekarang memiliki &ldquo;hanya&rdquo; 128 GB. Aku berencana untuk membuat SMB dan memindahkan banyak film dari PC-ku (sekitar 87.7 GB, 56 film) untuk ditonton dengan streaming via Jellyfin. <em>Kenapa engga streaming pakai website biasa aja?</em> Jawabannya karena ada risiko bakal patah-patah. Aku juga berencana melakukan banyak hal seperti mendownload otomatis film via <em>torrent</em> ke serverku jadi aku tidak perlu menyalakan PC-ku dan menunggu proses <em>download</em> selesai.</p>
+<p><em>Post</em> ini adalah bentuk dari dokumentasi dalam proses perombakan ini.</p>
+<h2 id="x260">X260</h2>
+<p>Mari kenalan dulu sama <em>lappy</em> yang bakal kuoprek. Dia akan kuberi nama, &ldquo;RENNER&rdquo; yang artinya pelari (dari bahasa Jerman) dan nama itu bersifat palindrom (dibaca dibalik tetap RENNER). Dia adalah Thinkpad X260 yang kubeli 27 Desember 2021. Waktu itu aku ada di kampung halaman, cuma punya PC dan PC-ku ada di kota aku kuliah😢. Karena mati bosan aku memutuskan untuk membeli laptop yang &ldquo;murah&rdquo;. Berikut penampakan si doi.</p>
+<p><img src="./komuk.jpg" alt=""></p>
+<h3 id="sejarah-x260">Sejarah X260</h3>
+<p>Sedikit <em>flashback</em>, Aku kurang puas dengan <em>layout</em> <em>keyboard</em> Jepang-nya. Jadi aku beli lagi keyboard khusus untuk <em>layout</em> US, tapi karena aku terlalu tengil jadi keycap untuk <em>backspace</em> jadi lepas dan aku engga tahu cara benerinnya.</p>
+<p><img src="./keyboard-us.jpg" alt=""></p>
+<p>Setelah beberapa bulan beli, aku kembali kuliah dan laptop ini jadi tidak terpakai. Aku memutuskan untuk meminjamkannya ke sahabatku. Setelah dipakai beberapa semester, laptopnya rusak&hellip;keyboard-nya ngetik sendiri sama ada beberapa <em>keys</em> yang tidak berfungsi. Sudah tertekan tetapi dia tidak mau merespon. Sahabatku beli laptop baru dan kembaliin si RENNER.</p>
+<p>Aku kira aku masih bisa pakai RENNER sebagai laptop (bisa dibawa ke warkop). Tapi setelah aku coba ganti <em>keyboard</em> ke Jepang lagi ternyata masalahnya di konektor😫. Bisa sih pakai <em>keyboard</em> eksternal tapi yang aku ga suka itu <em>ghost click</em> nya, tiba-tiba bisa ngespam YYYYYYYYYYYYYYYYYYYYYYYYYY tiada aliran elektron tiada tekanan jari manusia.</p>
+<h3 id="kondisi">Kondisi</h3>
+<p>I/O keyboard ini cukup lengkap, di bagian kanan ada</p>
+<p><img src="./kanan.jpg" alt=""></p>
+<ul>
+<li><em>Audio combo jack</em></li>
+<li><em>USB A 3.0</em> (support <em>Always on</em>)</li>
+<li><em>SD Card Reader</em></li>
+<li><em>Port RJ45</em></li>
+<li><em>Kensington Lock</em></li>
+<li><em>Slot SIM card</em> (aku cukup takjub dengan adanya ini, soalnya ini cuma ada di laptop kelas bisnis)</li>
+</ul>
+<p>Di bagian kiri ada</p>
+<p><img src="./kiri.jpg" alt=""></p>
+<ul>
+<li><em>DC jack</em></li>
+<li><em>HDMI port</em></li>
+<li><em>Mini Display Port</em></li>
+<li>2 <em>USB A 3.0</em></li>
+</ul>
+<p>Namun sayangnya ada sedikit masalah di skrup bagian kanannya. Skrupnya tidak mampu melekatkan bodi atas dan bawah sehingga ada sedikit celah seperti ini</p>
+<p><img src="./skrup_rusak.gif" alt=""></p>
+<p>RENNER masih bisa nyala dan bisa kugunakan sebagai bahan <em>homelab</em>, aku bersyukur untuk itu.</p>
+<p>Ini adalah spesifikasi hardware singkat dari RENNER</p>
+<p><img src="./neofetch.png" alt=""></p>
+<p>Sedikit tambahan kalau RENNER sebenarnya punya slot M.2 SATA tapi engga kepake dan untuk <em>booting</em> dia pakai SSD SATA 2.5 <em>inch</em> 128 GB.</p>
+<h2 id="memilih-os">Memilih OS</h2>
+<p>Sebelumnya, aku menggunakan Lubuntu 24 untuk OS <em>homelab</em> ku. Saat itu aku belum tahu tentang Proxmox. Sebuah OS yang memungkinkan virtualisasi VM dan Container. Dengan Proxmox aku tidak perlu takut dengan terjadinya <em>conflict</em> seperti yang aku ceritakan sebelumnya. Aku kenal Proxmox dari <a href="https://youtu.be/cMVcclMkp7g?si=o5Eu6_09dNmtT5gg&amp;t=443">video ini</a>. Saatnya kita mulai instalasi</p>
+<ol>
+<li>Aku kunjungi situs resminya dan memilih Proxmox VE (<em>Virtual Environment</em>) untuk di-download. Pada waktu aku menulis ini, aku sedang menunggu prosesnya selesai.</li>
+<li>Ambil <em>flashdisk</em> engga kepake trus buat jadi <em>bootable</em> USB dengan ISO yang baru di-download. Di sini aku pakai Rufus
+<img src="image.png" alt="alt text"></li>
+</ol>
+<p>Aku kaget karena aku dapet <em>warning</em> kalau bakal pakai DD image (aku engga tahu apa itu, dan rasanya sejauh ini aku buat <em>Bootable</em> USB) engga pernah pakai itu</p>
+<p><img src="image-1.png" alt="alt text"></p>
+<p>Setelah kucari ternyata <a href="https://github.com/pbatard/rufus/issues/843">ini bedanya</a>
+Oke&hellip;dan pas aku klik ternyata aku engga bisa akses USB-nya dan USB-nya jadi 2 partisi</p>
+<p><img src="image-2.png" alt="alt text"></p>
+<p>Dan aku juga engga bisa akses F: dan G: (kedua partisi USB itu)
+<img src="image-3.png" alt="alt text"></p>
+<p>Jawabannya juga ada <a href="https://github.com/pbatard/rufus/issues/843">di sini</a></p>
+<blockquote>
+<p>But this can also be one of the drawbacks, as it means you will usually find that you cannot access the content of your USB any longer after it has been created.
+Itu menjelaskan kenapa.</p></blockquote>
+<ol start="3">
+<li>Sekarang aku perlu colok aja USB ini ke RENNER dan install Proxmox-nya. Aku udah lihat <a href="https://www.youtube.com/watch?v=_u8qTN3cCnQ">video tutorial ini</a> dan kelihatannya tidak begitu buruk.</li>
+</ol>
+<h2 id="proxmox-setup">Proxmox Setup</h2>
+<p>Jadi langsung saja aku masuk ke <em>boot option</em> dan memilih <em>flashdisk</em> untuk di-<em>boot</em></p>
+<p><img src="./boot_option.jpeg" alt=""></p>
+<p>Lalu aku disuguhkan Welcome Screen yang langsung kupilih <em>graphical installation</em></p>
+<p><img src="./welcome.jpeg" alt=""></p>
+<p>Seperti instalasi <em>software</em> lainnya aku juga disuguhkan EULA</p>
+<p><img src="./eula.jpeg" alt=""></p>
+<p>Setelah itu aku diminta untuk memilih <em>harddisk</em> instalasi dan aku melihat tombol <em>options</em></p>
+<p><img src="./harddisk.jpeg" alt=""></p>
+<p>Oke di menu ini ada beberapa size yang bisa kita tentukan, penjelasan dari hdsize, minroot, swapsize, minfree, dan maxvz dapat ditemukan <a href="https://www.reddit.com/r/Proxmox/comments/1bpfiaj/question_about_disk_sizes/">di sini</a></p>
+<p>Kurang lebih artinya begini</p>
+<ul>
+<li>hdsize: ukuran dari harddisk yang ingin digunakan untuk <strong>semua</strong> partisi</li>
+<li>swapsize: kapasitas memori swap (<em>virtual memory</em>) untuk partisi ini</li>
+<li>minroot: ukuran dari partisi OS</li>
+<li>minfree: ukuran dari harddisk yang tidak boleh digunakan</li>
+<li>maxvz: ukuran untuk disk VM, dan kawan-kawan</li>
+</ul>
+<p>Aku biarkan kosong saja</p>
+<p>Lalu aku ditunjukkan halaman untuk konfigurasi jaringan</p>
+<p><img src="./network_example.jpeg" alt=""></p>
+<p>Aku coba cari-cari tentang apa itu <em>hostname</em>, ternyata <a href="https://forum.proxmox.com/threads/hostname-fqdn-huh.63667/">bisa aku awur</a>, yang penting masuk saja. Berikut adalah konfigurasiku</p>
+<p><img src="./network.jpeg" alt=""></p>
+<p>Akhirnya aku ditunjukkan ringkasan tentang Proxmox yang kubuat dan ini hasilnya</p>
+<p><img src="./summary.jpeg" alt=""></p>
+<p>Dan setelah reboot, aku bisa login. Dan <em>seharusnya</em> aku bisa akses Proxmox dari IP address port 8006</p>
+<p><img src="./login.jpeg" alt=""></p>
+<p>Dan saat kucoba akses 192.168.18.78:8006, lihat apa yang terjadi</p>
+<p><img src="./timed_out.jpg" alt="alt text"></p>
+<p>Saat aku coba <code>ping</code> juga tidak dapat sampai</p>
+<p><img src="./ping_failed.jpg" alt="alt text"></p>
+<p>Lalu aku sadar&hellip;aku belum menghubungkannya ke Wi-Fi, bruh. Setelah aku mencari-cari aku menemukan <a href="https://www.x88.in/proxmox-with-wifi">situs ini</a> dan aku langsung edit <code>/etc/network/interfaces</code> dengan menambahkan <code>wpa-essid</code> dan <code>wpa-psk</code> menjadi seperti ini</p>
+<p><img src="./config.jpeg" alt=""></p>
+<p>Dan setelah aku reboot dan aku coba ping 1.1.1.1 ternyata masih tidak bisa. Aku coba ping PC-ku juga tidak bisa😔. Setelah sekian lama mencari ternyata menggunakan Wi-Fi tidak disarankan</p>
+<blockquote>
+<p>Avoid using WLAN if possible, it has several technical limitations making it not really suitable as single interface of a hyper-visor like PVE.</p></blockquote>
+<p>Oke&hellip;aku memutuskan untuk berhenti di sini karena aku tidak punya kabel LAN.</p>
+
+        </section>
+        <div class="post-tags">
+          
+          
+          <nav class="nav tags">
+            <ul class="tags">
+              
+              <li><a href="/tags/indonesia">indonesia</a></li>
+              
+              <li><a href="/tags/it">it</a></li>
+              
+            </ul>
+          </nav>
+          
+          
+        </div>
+      </div>
+
+      
+      
+    </div>
+
+    </article>
+</main>
+<footer>
+  <div style="display:flex"><a class="soc" href="mailto:yttriumemulsion@gmail.com" rel="me" title="Email"><svg class="feather">
+   <use href="/svg/feather-sprite.51cf5647cb1987f769b616558f2620fd9423d72058490231b391bf6aa3744b55.svg#mail" />
+</svg></a><a class="border"></a></div>
+  <div class="footer-info">
+    2025  © BuddyHeartO |  <a
+      href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
+  </div>
+</footer>
+
+</div>
+    </body>
+</html>

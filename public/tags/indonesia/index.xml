@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© BuddyHeartO</copyright>
-    <lastBuildDate>Sun, 04 May 2025 10:47:59 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 18 Jun 2025 00:17:11 +0700</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/indonesia/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Home Lab Revamp</title>
+      <link>http://localhost:1313/posts/home-lab-revamp/</link>
+      <pubDate>Wed, 18 Jun 2025 00:17:11 +0700</pubDate>
+      <guid>http://localhost:1313/posts/home-lab-revamp/</guid>
+      <description>&lt;h2 id=&#34;dibuat-di-surga&#34;&gt;Dibuat di Surga&lt;/h2&gt;&#xA;&lt;p&gt;Aku memutuskan untuk merombak &lt;em&gt;setup&lt;/em&gt; home-lab ku. Kenapa? Karena ada banyak conflict antara service yang berjalan. Aku mencoba memasang Pi-Hole untuk eksperimen DNS dan &lt;em&gt;Ad-Blocker&lt;/em&gt; tapi ternyata itu conflict dengan Apache Web Server. Aku tidak mau mematikan Apache karena FreshRSS, Nextcloud berjalan di atas itu.&lt;/p&gt;&#xA;&lt;p&gt;Alasan yang kedua adalah aku ingin melakukan ekspansi untuk &lt;em&gt;storage&lt;/em&gt;. Thinkpad X260 serverku sekarang memiliki &amp;ldquo;hanya&amp;rdquo; 128 GB. Aku berencana untuk membuat SMB dan memindahkan banyak film dari PC-ku (sekitar 87.7 GB, 56 film) untuk ditonton dengan streaming via Jellyfin. &lt;em&gt;Kenapa engga streaming pakai website biasa aja?&lt;/em&gt; Jawabannya karena ada risiko bakal patah-patah. Aku juga berencana melakukan banyak hal seperti mendownload otomatis film via &lt;em&gt;torrent&lt;/em&gt; ke serverku jadi aku tidak perlu menyalakan PC-ku dan menunggu proses &lt;em&gt;download&lt;/em&gt; selesai.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Reading Journey</title>
       <link>http://localhost:1313/posts/reading-journey/</link>
