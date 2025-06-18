@@ -17,6 +17,11 @@ name = "Email"
 icon = "mail"
 url = "mailto:yttriumemulsion@gmail.com"
 
+[[params.social]]
+name = "Hardcover"
+icon = "book"
+url = "https://hardcover.app/@slidingsoul"
+
 [[menu.main]]
 name = "Home"
 url = "/"
