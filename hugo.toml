@@ -22,6 +22,11 @@ name = "Hardcover"
 icon = "book"
 url = "https://hardcover.app/@slidingsoul"
 
+[[params.social]]
+name = "Facebook"
+icon = "facebook"
+url = "https://www.facebook.com/dabito.wisewealth"
+
 [[menu.main]]
 name = "Home"
 url = "/"

@@ -155,6 +155,64 @@ Itu menjelaskan kenapa.</p></blockquote>
 <blockquote>
 <p>Avoid using WLAN if possible, it has several technical limitations making it not really suitable as single interface of a hyper-visor like PVE.</p></blockquote>
 <p>Oke&hellip;aku memutuskan untuk berhenti di sini karena aku tidak punya kabel LAN.</p>
+<h2 id="proxmox-setup-retry">Proxmox Setup Retry</h2>
+<p>Akhirnya, ini kabel LAN yang kupesan sudah sampai. Setelah aku test menggunakan laptop-ku (yang bukan untuk server) ternyata bisa tersambung ke internet. Setelah itu aku memutuskan untuk menyambungkannya ke RENNER namun masih tidak bisa mencapai 1.1.1.1. Aku pun memutuskan untuk meng-install ulang Proxmox (hal ini bisa dihindari jika aku lebih rajin😬). Setelah itu aku mendapat kabar baik.</p>
+<p><img src="Untitled.jpg" alt="alt text"></p>
+<p>Dan juga&hellip;aku bisa mengakses :8006 untuk mengakses Proxmox via web UI dari PC-ku.</p>
+<p><img src="image-4.png" alt="alt text"></p>
+<p>Biar lebih aman aku <em>reserve</em> juga <em>static</em> IP di pengaturan modem Wi-Fi-ku</p>
+<p><img src="image-5.png" alt="alt text"></p>
+<h3 id="mencegah-suspend-saat-lid-ditutup">Mencegah <em>Suspend</em> saat <em>Lid</em> Ditutup</h3>
+<p>Saat ditutup, laptop biasanya akan masuk ke <em>mode</em> <em>sleep</em>/<em>suspend</em>. Aku ingin supaya RENNER tidak masuk <em>mode</em> itu ketika aku menutupnya. Oleh karena itu aku mengubah konfigurasi di <code>/etc/systemd/logind.conf</code>.</p>
+<p>Aku mengubah line yang kelihatan seperti ini</p>
+<p><code>#HandleLidSwitch=suspend</code></p>
+<p>dan ini</p>
+<p><code>#HandleLidSwitchDocked=ignore</code></p>
+<p>menjadi</p>
+<p><code>HandleLidSwitch=ignore</code></p>
+<p>dan</p>
+<p><code>HandleLidSwitchDocked=ignore</code></p>
+<p>Perhatikan <strong>tanda pagarnya</strong>. Hasilnya bakal seperti ini</p>
+<p><img src="image-6.png" alt="alt text"></p>
+<p>Setelah itu aku perlu <em>save</em> <em>file</em>-nya dan juga restart systemd</p>
+<p><code>systemctl restart systemd-logind.service</code></p>
+<p>Setelah kucoba&hellip;it works🥳. Oh ya aku ketemu tutorialnya <a href="https://youtu.be/_u8qTN3cCnQ?si=4I_h-ul_g7U5Y2gk&amp;t=1588">di sini</a></p>
+<h3 id="mematikan-layar">Mematikan layar</h3>
+<p>Aku tidak mau jika layarku menyala 24/7 karena akan membuat RENNER jadi kepanasan. Jadi aku coba mencari cara mematikan layarnya. Ternyata di <a href="https://youtu.be/_u8qTN3cCnQ?si=jGAl1fB45Z94MhQt&amp;t=1705">video yang sama</a> juga dijelaskan. Aku perlu mengedit file dengan</p>
+<p><code>nano /etc/default/grub</code></p>
+<p>lalu ubah line ini</p>
+<p><code>GRUB_CMDLINE_LINUX=&quot;&quot;</code></p>
+<p>jadi</p>
+<p><code>GRUB_CMDLINE_LINUX=&quot;consoleblank=60&quot;</code></p>
+<p>Angka di situ menunjukkan berapa detik layar akan mati setelah tidak ada aktivitas. Enam puluh berarti layarku akan mati setelah 60 detik (1 menit tanpa aktivitas). Setelah itu, untuk mengimplementasikan perubahan, aku jalankan</p>
+<p><code>update-grub</code></p>
+<h3 id="koneksi-harddisk">Koneksi Harddisk</h3>
+<p>Aku punya <em>harddisk</em> 1 TB yang rencananya akan kugunakan untuk NAS dan juga menyimpan film serta musik. Pada saat kuhubungkan pertama kali, Proxmox belum mendeteksi adanya <em>harddisk</em> itu. Tetapi setelah aku melakukan <em>reboot</em> harddisk itu dikenali sebagai <code>/dev/sdb</code></p>
+<p><img src="image-7.png" alt="alt text"></p>
+<p>Aku menemukan jawaban dari <a href="https://www.reddit.com/r/Proxmox/comments/miq0f5/erase_and_format_used_hdd_in_proxmox/">Reddit</a> tentang cara untuk memformat <em>harddisk</em>-ku.</p>
+<p><code>fdisk -l</code> dulu untuk melihat disk-nya. Ternyata <em>harddisk</em>-ku ada di <code>/dev/sdb</code>. Trus aku jalanin</p>
+<p><code>fdisk /dev/sdb</code>, habis itu pas CLI-nya berubah aku ketik <code>d</code>, <code>Enter</code>, habis itu <code>w</code>, <code>Enter</code>. Pas aku klik <code>d</code> lalu <code>Enter</code>, itu bakal menghapus partisi di <em>harddisk</em>-ku. Pas aku ketik <code>w</code> itu berarti bakal <em>write changes</em> ke <em>harddisk</em>-ku Kebetulan cuma ada 1 jadi aku perlu jalanin sekali. Habis itu aku ngelihat disk-nya lagi, betul deh, partisinya hilang. Sekarang saatnya buat partisi baru.</p>
+<p><code>fdisk /dev/sdb</code>
+<code>g</code>, ini bakal ngebuat partisi baru
+<code>w</code></p>
+<p>Oke sampai sini. Aku baru sadar ternyata ada GUI-nya&hellip;</p>
+<p><img src="image-8.png" alt="alt text"></p>
+<p><em>Moving on</em>, aku mau buat jadi beberapa partisi yaitu</p>
+<ul>
+<li>300GB untuk film-film</li>
+<li>&hellip;dan sisanya aku belum tahu😬</li>
+</ul>
+<p>Kita masih bakal pakai <code>fdisk</code> karena aku ketemu <a href="https://phoenixnap.com/kb/linux-create-partition">website buat tutorialnya</a>.</p>
+<p>Masalahnya pas aku langsung masukkin <code>n</code> aku dapet prompt ini</p>
+<p><img src="image-9.png" alt="alt text"></p>
+<p>Aku gak tahu bedanya <em>primary</em> sama <em>extended</em>, jadi aku perlu <a href="https://www.eassos.com/blog/partition-types-primary-extended-and-logical-partitions/">Googling</a> lagi. Untung langsung nemu dan sat-set sat-set, aku langsung pilih <em>primary</em>, <em>start</em> 2048, <em>last sector</em> +300GB, abis itu langsung <code>w</code>. DONE.</p>
+<p><img src="image-10.png" alt="alt text"></p>
+<h3 id="syncthing">Syncthing</h3>
+<p>Setup Syncthing jadi prioritasku biar aku bisa sinkronkan PKMS (<em>Personal Knowledge Management System</em>)-ku antara PC, <em>laptop</em>, dan ponsel. Aku kepikirannya pakai <em>container</em> aja soalnya aku cuma jalanin 1 aplikasi dulu. Aku perlu cari cara buat <em>container</em> di Proxmox. Aku ketemu video ini yang pake Docker.</p>
+<ol>
+<li>Aku perlu <em>download template</em> untuk <em>container</em>-nya, aku pilih Ubuntu karena&hellip;aku lebih suka aja</li>
+</ol>
+<p><img src="image-11.png" alt="alt text"></p>
 
         </section>
         <div class="post-tags">
@@ -183,6 +241,10 @@ Itu menjelaskan kenapa.</p></blockquote>
 <footer>
   <div style="display:flex"><a class="soc" href="mailto:yttriumemulsion@gmail.com" rel="me" title="Email"><svg class="feather">
    <use href="/svg/feather-sprite.51cf5647cb1987f769b616558f2620fd9423d72058490231b391bf6aa3744b55.svg#mail" />
+</svg></a><a class="border"></a><a class="soc" href="https://hardcover.app/@slidingsoul" rel="me" title="Hardcover"><svg class="feather">
+   <use href="/svg/feather-sprite.51cf5647cb1987f769b616558f2620fd9423d72058490231b391bf6aa3744b55.svg#book" />
+</svg></a><a class="border"></a><a class="soc" href="https://www.facebook.com/dabito.wisewealth" rel="me" title="Facebook"><svg class="feather">
+   <use href="/svg/feather-sprite.51cf5647cb1987f769b616558f2620fd9423d72058490231b391bf6aa3744b55.svg#facebook" />
 </svg></a><a class="border"></a></div>
   <div class="footer-info">
     2025  © BuddyHeartO |  <a
