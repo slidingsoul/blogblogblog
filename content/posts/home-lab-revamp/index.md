@@ -1,6 +1,6 @@
 +++
 date = '2025-06-18T00:17:11+07:00'
-draft = true
+draft = false
 title = 'Home Lab Revamp'
 tags = ['indonesia', 'it']
 +++
@@ -388,4 +388,10 @@ Dan taraaa
 
 ![alt text](image-34.png)
 
-Fyuh panjang juga ya postingan ini. Thank you yang udah baca sampai abis dan nyimak aku nge-FAFO. Aku rencananya bakal maintain dan ngasi tahu kalau ada update dari homelab-ku ini. Hehe, ciao
+Kurang lebih ini gambaran buat sinkronisasi file-nya
+
+![alt text](image-35.png)
+
+RENNER aku jadiin episentrum untuk menyimpan file yang baru. Semisal aku edit di HP dan PC-ku mati, file-nya bakal ke-save di RENNER, dan aku bisa fetch dari PC-ku ketika kunyalakan. Begitu juga sebaliknya.
+
+Fyuh panjang juga ya postingan ini. Thank you yang udah baca sampai abis dan nyimak aku nge-FAFO. Aku rencananya bakal maintain dan ngasi tahu kalau ada update dari homelab-ku ini. Hehe, ciao.
