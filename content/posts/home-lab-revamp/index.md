@@ -336,7 +336,7 @@ Dan setelah menunggu (lagi). Docker sudah terpasang
 
 ![alt text](image-26.png)
 
-Okeh maknyus, sudah jalan. Sekarang aku mau coba SSH, tapi ternyata kena tolak terus padahal sshd jalan, password dah betul juga. Ternyata aku perlu edit `/etc/ssh/sshd_config` trus ubah `#PermitRootLogin prohibit-password` jadi `PermitRootLogin yes` dan voila!
+Okeh maknyus, sudah jalan. Sekarang aku mau coba SSH, tapi ternyata kena tolak terus padahal sshd jalan, password dah betul juga. Ternyata aku [perlu edit](https://forum.proxmox.com/threads/cannot-ssh-to-new-container.38114/) `/etc/ssh/sshd_config` trus ubah `#PermitRootLogin prohibit-password` jadi `PermitRootLogin yes` dan voila!
 
 ![alt text](image-27.png)
 
