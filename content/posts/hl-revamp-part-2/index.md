@@ -1,6 +1,6 @@
 +++
 date = '2025-06-21T10:45:12+07:00'
-draft = true
+draft = false
 title = 'Homelab Revamp Part 2'
 tags = ['indonesia', 'it']
 +++
