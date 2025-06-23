@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© BuddyHeartO</copyright>
-    <lastBuildDate>Wed, 18 Jun 2025 00:17:11 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 21 Jun 2025 10:45:12 +0700</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/it/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Homelab Revamp Part 2</title>
+      <link>http://localhost:1313/posts/hl-revamp-part-2/</link>
+      <pubDate>Sat, 21 Jun 2025 10:45:12 +0700</pubDate>
+      <guid>http://localhost:1313/posts/hl-revamp-part-2/</guid>
+      <description>&lt;h2 id=&#34;kata-pengantar&#34;&gt;Kata Pengantar&lt;/h2&gt;&#xA;&lt;p&gt;Oke kita sekarang udah berhasil jalanin Syncthing dengan buat sesi tmux. Masalahnya kalau mati listrik aku perlu buat sesi tmux, trus jalanin &lt;code&gt;syncthing serve&lt;/code&gt; lagi. Malas&lt;/p&gt;&#xA;&lt;h2 id=&#34;setting-autostart-syncthing&#34;&gt;Setting autostart syncthing&lt;/h2&gt;&#xA;&lt;p&gt;Sebab itu aku cari cara supaya syncthing bisa autostart semisal container-ku nyala lagi. Aku ikutin &lt;a href=&#34;https://docs.syncthing.net/users/autostart.html#linux&#34;&gt;dokumentasinya&lt;/a&gt; dan &lt;em&gt;user&lt;/em&gt;-nya aku pakai &lt;strong&gt;root&lt;/strong&gt;. Jangan ditiru kawan-kawan, sebaiknya kalian buat user baru untuk syncthing. Karena aku install via apt, aku bisa langsung skip ke step nomor 3.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Home Lab Revamp</title>
       <link>http://localhost:1313/posts/home-lab-revamp/</link>

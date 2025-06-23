@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© BuddyHeartO</copyright>
-    <lastBuildDate>Wed, 18 Jun 2025 15:24:09 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 21 Jun 2025 10:45:12 +0700</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Homelab Revamp Part 2</title>
+      <link>http://localhost:1313/posts/hl-revamp-part-2/</link>
+      <pubDate>Sat, 21 Jun 2025 10:45:12 +0700</pubDate>
+      <guid>http://localhost:1313/posts/hl-revamp-part-2/</guid>
+      <description>&lt;h2 id=&#34;kata-pengantar&#34;&gt;Kata Pengantar&lt;/h2&gt;&#xA;&lt;p&gt;Oke kita sekarang udah berhasil jalanin Syncthing dengan buat sesi tmux. Masalahnya kalau mati listrik aku perlu buat sesi tmux, trus jalanin &lt;code&gt;syncthing serve&lt;/code&gt; lagi. Malas&lt;/p&gt;&#xA;&lt;h2 id=&#34;setting-autostart-syncthing&#34;&gt;Setting autostart syncthing&lt;/h2&gt;&#xA;&lt;p&gt;Sebab itu aku cari cara supaya syncthing bisa autostart semisal container-ku nyala lagi. Aku ikutin &lt;a href=&#34;https://docs.syncthing.net/users/autostart.html#linux&#34;&gt;dokumentasinya&lt;/a&gt; dan &lt;em&gt;user&lt;/em&gt;-nya aku pakai &lt;strong&gt;root&lt;/strong&gt;. Jangan ditiru kawan-kawan, sebaiknya kalian buat user baru untuk syncthing. Karena aku install via apt, aku bisa langsung skip ke step nomor 3.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Silly Goose</title>
       <link>http://localhost:1313/posts/silly-goose/</link>
@@ -31,7 +38,7 @@
       <description>&lt;p&gt;&lt;img src=&#34;https://static1.howtogeekimages.com/wordpress/wp-content/uploads/2022/02/laptop-burning-fire.jpg?q=70&amp;amp;fit=contain&amp;amp;w=1200&amp;amp;h=628&amp;amp;dpr=1&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;tldr&#34;&gt;TLDR&lt;/h2&gt;&#xA;&lt;p&gt;This is more of a &lt;strong&gt;RANT&lt;/strong&gt; than a &lt;strong&gt;BLOG&lt;/strong&gt;. Reader indiscretion is advised.&lt;/p&gt;&#xA;&lt;h2 id=&#34;i-wont-be-a-developer&#34;&gt;I won&amp;rsquo;t be a developer&lt;/h2&gt;&#xA;&lt;p&gt;Writing this is hard, not going to lie. This might concern others, my family, my friends, or just people whom I shared my dream with. But let me declare this. &lt;strong&gt;I will not be a software developer.&lt;/strong&gt; Heck, I&amp;rsquo;m going to steer clear of any job listing, seminar invitation, even social media contents about software development.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>No Music</title>
+      <title>No More No Music</title>
       <link>http://localhost:1313/posts/no-music/</link>
       <pubDate>Wed, 14 May 2025 19:49:45 +0700</pubDate>
       <guid>http://localhost:1313/posts/no-music/</guid>

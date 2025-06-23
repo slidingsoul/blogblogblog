@@ -45,6 +45,8 @@ Alasan yang kedua adalah aku ingin melakukan ekspansi untuk storage. Thinkpad X2
 		
 		<a href="/tags">Tags</a>
 		
+		<a href="/index.xml">RSS</a>
+		
 		
 	</nav>
 </header>
@@ -56,7 +58,7 @@ Alasan yang kedua adalah aku ingin melakukan ekspansi untuk storage. Thinkpad X2
       <div class="post-content">
         <div class="title">
           <h1 class="title">Home Lab Revamp</h1>
-          <div class="meta">Posted on Jun 18, 2025 <span class="draft-label">DRAFT</span> </div>
+          <div class="meta">Posted on Jun 18, 2025</div>
         </div>
         
         <section class="body">
@@ -208,11 +210,88 @@ Itu menjelaskan kenapa.</p></blockquote>
 <p>Aku gak tahu bedanya <em>primary</em> sama <em>extended</em>, jadi aku perlu <a href="https://www.eassos.com/blog/partition-types-primary-extended-and-logical-partitions/">Googling</a> lagi. Untung langsung nemu dan sat-set sat-set, aku langsung pilih <em>primary</em>, <em>start</em> 2048, <em>last sector</em> +300GB, abis itu langsung <code>w</code>. DONE.</p>
 <p><img src="image-10.png" alt="alt text"></p>
 <h3 id="syncthing">Syncthing</h3>
-<p>Setup Syncthing jadi prioritasku biar aku bisa sinkronkan PKMS (<em>Personal Knowledge Management System</em>)-ku antara PC, <em>laptop</em>, dan ponsel. Aku kepikirannya pakai <em>container</em> aja soalnya aku cuma jalanin 1 aplikasi dulu. Aku perlu cari cara buat <em>container</em> di Proxmox. Aku ketemu video ini yang pake Docker.</p>
+<p>Setup Syncthing jadi prioritasku biar aku bisa sinkronkan PKMS (<em>Personal Knowledge Management System</em>)-ku antara PC, <em>laptop</em>, dan ponsel. Aku kepikirannya pakai <em>container</em> aja soalnya aku cuma jalanin 1 aplikasi dulu. Aku perlu cari cara buat <em>container</em> di Proxmox. Aku ketemu <a href="https://www.youtube.com/watch?v=ufiSO9RHhYg">video ini</a> yang pake Docker.</p>
 <ol>
-<li>Aku perlu <em>download template</em> untuk <em>container</em>-nya, aku pilih Ubuntu karena&hellip;aku lebih suka aja</li>
+<li>Aku perlu <em>download template</em> untuk <em>container</em>-nya, aku pilih Ubuntu karena&hellip;aku lebih suka aja. Sekarang kita menunggu lagi.</li>
 </ol>
 <p><img src="image-11.png" alt="alt text"></p>
+<p>DONE</p>
+<p><img src="image-12.png" alt="alt text"></p>
+<ol start="2">
+<li>Sekarang aku perlu klik Create CT</li>
+</ol>
+<p><img src="image-13.png" alt="alt text"></p>
+<p><img src="image-14.png" alt="alt text"></p>
+<p>Buat <em>disk</em> aku pilih SSD aja karena PKMS harusnya engga ngabisin banyak tempat. Aku alokasiin 8 GB biar lega (kelegaan malah).</p>
+<p><img src="image-15.png" alt="alt text"></p>
+<p>Aku set 1 <em>core</em> aja buat CPU</p>
+<p><img src="image-16.png" alt="alt text"></p>
+<p><img src="image-17.png" alt="alt text"></p>
+<p>Ini konfigurasi buat <em>network</em>-nya dan aku biarin aja sih</p>
+<p><img src="image-18.png" alt="alt text"></p>
+<p>Dan di akhir, aku dikasi <em>summary</em> dari CT yang mau aku buat.</p>
+<p><img src="image-19.png" alt="alt text"></p>
+<ol start="3">
+<li>Setelah itu aku perlu install Docker di CT yang baru kubuat, aku baru aja berhasil login</li>
+</ol>
+<p><img src="image-20.png" alt="alt text"></p>
+<p>Abis itu di tutorial-nya nyaranin buat <em>update</em> dan <em>upgrade</em>. Buat kalian yang belum tahu, <em>update</em> itu bakal <em>download</em> informasi dari <em>update</em>-annya (versi berapa yang baru) dan <em>upgrade</em> itu baru yang bakal mengaplikasikan <em>update</em> yang rilis itu</p>
+<p><code>apt-get update &amp;&amp; apt-get upgrade</code>. Engga perlu <code>sudo</code> di depan karena kita udah root.</p>
+<p>Habis itu kita <em>install</em> <code>curl</code>, <code>apt install curl -y</code>. Dan setelah <em>tinkering</em> beberapa saat kita dapat masalah</p>
+<p><img src="image-21.png" alt="alt text"></p>
+<p>KAGAK BISA CONNECT INTERNET!!!</p>
+<p>Aku coba edit dengan nambahin IP <em>address</em></p>
+<p><img src="image-22.png" alt="alt text"></p>
+<p>Mantap betul👍</p>
+<p><img src="image-23.png" alt="alt text"></p>
+<p>Kalau kata temenku ini namanya FAFO, which stands for F*ck Around and Figure Out.</p>
+<p>Sekarang kita back to the previous step, get update, upgrade, dan sekarang kita tambahin <code>--fix-missing</code>.</p>
+<p><img src="image-24.png" alt="alt text"></p>
+<p>DONE</p>
+<p>trus kita <em>run command</em> ini</p>
+<p><code>curl -sSL https://get.docker.com | sh</code></p>
+<p>Aku engga ngerti apa artinya <code>flag</code> -sSL&hellip;aku coba cari di <a href="explainshell.com">Explain Shell</a> dan <a href="https://explainshell.com/explain?cmd=curl+-sSL+https%3A%2F%2Fget.docker.com">ini jawabannya</a></p>
+<p>Dan setelah menunggu (lagi). Docker sudah terpasang</p>
+<p><img src="image-25.png" alt="alt text"></p>
+<ol start="4">
+<li>Instal Syncthing di Docker-nya. Ini sebenernya udah malem pas aku nulis ini dan sekarang aku gmw ribet😫😫😫, jadi langsung aja aku <em>run</em> ini</li>
+</ol>
+<p><code>docker run -d \ --name=syncthing \ --hostname=sinker </code>#optional<code>\ -e PUID=1000 \ -e PGID=1000 \ -e TZ=Etc/UTC \ -p 8384:8384 \ -p 22000:22000/tcp \ -p 22000:22000/udp \ -p 21027:21027/udp \ -v /path/to/syncthing/config:/config \ -v /path/to/data1:/data1 \ -v /path/to/data2:/data2 \ --restart unless-stopped \ lscr.io/linuxserver/syncthing:latest</code></p>
+<p><img src="image-26.png" alt="alt text"></p>
+<p>Okeh maknyus, sudah jalan. Sekarang aku mau coba SSH, tapi ternyata kena tolak terus padahal sshd jalan, password dah betul juga. Ternyata aku <a href="https://forum.proxmox.com/threads/cannot-ssh-to-new-container.38114/">perlu edit</a> <code>/etc/ssh/sshd_config</code> trus ubah <code>#PermitRootLogin prohibit-password</code> jadi <code>PermitRootLogin yes</code> dan voila!</p>
+<p><img src="image-27.png" alt="alt text"></p>
+<p>Sekarang aku bisa melakukan SSH Tunneling</p>
+<p><code>ssh -L 6065:localhost:8384 root@192.168.18.204</code></p>
+<p>dan&hellip;</p>
+<p><img src="image-28.png" alt="alt text"></p>
+<p>Keren bat guwa mah😎</p>
+<p>sekarang saatnya buat folder baru, trus tinggal hubungin deh via GUI.</p>
+<ol start="5">
+<li>Setting folder dan GUI</li>
+</ol>
+<p>Oke kalau soal GUI tinggal teken-teken aja lah ya, sekarang aku dapet masalah yang menarik.</p>
+<p>Aku udah buat folder dengan path dan permission seperti ini</p>
+<p><img src="image-29.png" alt="alt text"></p>
+<p>Tapi masalahnya, aku dapet error message ini terus</p>
+<p><img src="image-30.png" alt="alt text"></p>
+<p>Setelah 2 kali mencoba aku sadar, &ldquo;Iya juga ya, kan syncthing-nya jalan di Docker&rdquo;. Kurang pintar saya memang, namanya juga belajar.✌️✌️✌️🕊️🕊️🕊️</p>
+<p>Daripada kesulitan mending aku langsung install Syncthing-nya di Ubuntu, kagak usah pake acara Docker-Dockeran segala.</p>
+<p>Stop dulu deh Docker-nya</p>
+<p><img src="image-31.png" alt="alt text"></p>
+<p>Abis itu install syncthing versi normal</p>
+<ol start="6">
+<li>Aku tinggal ikutin <a href="https://apt.syncthing.net/">dokumentasi dari APT</a> buat install syncthing.</li>
+</ol>
+<p><img src="image-32.png" alt="alt text"></p>
+<p>Mantap, udah terinstall. Sekarang saatnya ngetes.</p>
+<p><img src="image-33.png" alt="alt text"></p>
+<p>OK, GUI sudah bisa diakses via SSH Tunnelling. Sekarang saatnya klik-klik lagi. Eits tapi sebelum itu aku mau install tmux supaya Syncthing bisa jalan di-&ldquo;background&rdquo; (sort of). Aku pakai apt-get install dan aku ikutin aja <a href="https://www.linuxtrainingacademy.com/tmux-tutorial/">tutorial dari sini</a></p>
+<p>Dan taraaa</p>
+<p><img src="image-34.png" alt="alt text"></p>
+<p>Kurang lebih ini gambaran buat sinkronisasi file-nya</p>
+<p><img src="image-35.png" alt="alt text"></p>
+<p>RENNER aku jadiin episentrum untuk menyimpan file yang baru. Semisal aku edit di HP dan PC-ku mati, file-nya bakal ke-save di RENNER, dan aku bisa fetch dari PC-ku ketika kunyalakan. Begitu juga sebaliknya.</p>
+<p>Fyuh panjang juga ya postingan ini. Thank you yang udah baca sampai abis dan nyimak aku nge-FAFO. Aku rencananya bakal maintain dan ngasi tahu kalau ada update dari homelab-ku ini. Hehe, ciao.</p>
 
         </section>
         <div class="post-tags">
