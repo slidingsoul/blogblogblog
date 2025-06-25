@@ -4,6 +4,10 @@ title = 'ALPHASE'
 theme = 'archie'
 copyright = "© BuddyHeartO"
 
+# Pagination
+[pagination]
+pagerSize = 2
+
 # Image Cache
 
 [caches]

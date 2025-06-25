@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html><head lang="en"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Home Lab Revamp Part 3 - ALPHASE</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Sink In
+Saya perlu merogoh kocek yang lumayan untuk membeli harddisk baru karena yang lama ternyata palsu. Yang baru menghabiskan sekitar 300 ribu rupiah termasuk enclosure dan pemasangan.
+Setelah saya coba hubungkan ke port USB, saya bisa merasakan &ldquo;detak jantung&rdquo; dari harddisk itu. Yang saya maksud detak jantung adalah perputaran atau rotasi dari cakram harddisk. Harddisk saya yang bohong-bohongan itu, yang bahkan sejak saya hidupkan tidak pernah saya merasakan detaknya. Ini penampakannya, by the way." />
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content="http://localhost:1313/posts/hl-revamp-part-3/">
+  <meta property="og:site_name" content="ALPHASE">
+  <meta property="og:title" content="Home Lab Revamp Part 3">
+  <meta property="og:description" content="Sink In Saya perlu merogoh kocek yang lumayan untuk membeli harddisk baru karena yang lama ternyata palsu. Yang baru menghabiskan sekitar 300 ribu rupiah termasuk enclosure dan pemasangan.
+Setelah saya coba hubungkan ke port USB, saya bisa merasakan “detak jantung” dari harddisk itu. Yang saya maksud detak jantung adalah perputaran atau rotasi dari cakram harddisk. Harddisk saya yang bohong-bohongan itu, yang bahkan sejak saya hidupkan tidak pernah saya merasakan detaknya. Ini penampakannya, by the way.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-06-25T12:20:43+07:00">
+    <meta property="article:modified_time" content="2025-06-25T12:20:43+07:00">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Home Lab Revamp Part 3">
+  <meta name="twitter:description" content="Sink In Saya perlu merogoh kocek yang lumayan untuk membeli harddisk baru karena yang lama ternyata palsu. Yang baru menghabiskan sekitar 300 ribu rupiah termasuk enclosure dan pemasangan.
+Setelah saya coba hubungkan ke port USB, saya bisa merasakan “detak jantung” dari harddisk itu. Yang saya maksud detak jantung adalah perputaran atau rotasi dari cakram harddisk. Harddisk saya yang bohong-bohongan itu, yang bahkan sejak saya hidupkan tidak pernah saya merasakan detaknya. Ini penampakannya, by the way.">
+
+        <link href="http://localhost:1313/css/fonts.11a1877508139eac0b5b4852ceb110c35641b3533321e66e39149e901ed5756b.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/main.e08e3d47ef734c0d298ed0fb46ed50640341570139eb362f34ac2720f01a4f58.css" />
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="http://localhost:1313/">ALPHASE</a>
+	</div>
+	<nav>
+		
+		<a href="/">Home</a>
+		
+		<a href="/posts">All Posts</a>
+		
+		<a href="/about">About</a>
+		
+		<a href="/tags">Tags</a>
+		
+		<a href="/index.xml">RSS</a>
+		
+		
+	</nav>
+</header>
+
+<main>
+  <article>
+    <div class="post-container">
+      
+      <div class="post-content">
+        <div class="title">
+          <h1 class="title">Home Lab Revamp Part 3</h1>
+          <div class="meta">Posted on Jun 25, 2025</div>
+        </div>
+        
+        <section class="body">
+          <h2 id="sink-in">Sink In</h2>
+<p>Saya perlu merogoh kocek yang lumayan untuk membeli harddisk baru karena yang lama ternyata palsu. Yang baru menghabiskan sekitar 300 ribu rupiah termasuk enclosure dan pemasangan.</p>
+<p>Setelah saya coba hubungkan ke port USB, saya bisa merasakan &ldquo;detak jantung&rdquo; dari harddisk itu. Yang saya maksud detak jantung adalah perputaran atau rotasi dari cakram harddisk. Harddisk saya yang bohong-bohongan itu, yang bahkan sejak saya hidupkan tidak pernah saya merasakan detaknya. Ini penampakannya, by the way.</p>
+<p><img src="Untitled-1.jpg" alt="alt text"></p>
+<p>Dan ini adalah penambahkan harddisk yang baru (lagi)</p>
+<p><img src="Untitled.jpg" alt="alt text"></p>
+<p>Oke setelah saya sambungkan langsung muncul sebagai /dev/sdb</p>
+<p><img src="image.png" alt="alt text"></p>
+<p>Dan saatnya kita melakukan setup untuk Jellyfin. Saya akan mendedikasikan 1 harddisk berukuran 500GB (iya, saya mau tidak mau perlu menurunkan kapasitas dari intensi saya awalnya karena uang saya tidak cukup) sebagai media penyimpanan film saya.</p>
+<h2 id="setup-harddisk">Setup Harddisk</h2>
+<p>Pertama kali saya membeli, harddisk sudah diformat dan dibuatkan partisi oleh Mas-Mas penjaga toko komputernya. Itulah kenapa partisinya itu NTFS. Saya akan wipe harddisk-nya dan menjadikannya sebagai LVM</p>
+<p><img src="image-1.png" alt="alt text"></p>
+<h2 id="setup-ct">Setup CT</h2>
+<p>Saya bakal coba pakai Container lagi untuk menjalankan Jellyfin</p>
+<p><img src="image-2.png" alt="alt text"></p>
+<p><img src="image-3.png" alt="alt text"></p>
+<p>Dan saya bingung apa yang harus saya isi di Path. Namun saya menemukan <a href="https://youtu.be/qa2Q7tZVol8?si=GWid4YnPQz3umZ2l&amp;t=150">video ini</a> dan saya bisa menyimpulkan bahwa saya cuma perlu buat Path yang masuk akal.</p>
+<p><img src="image-4.png" alt="alt text"></p>
+<p><img src="image-5.png" alt="alt text"></p>
+<p><img src="image-6.png" alt="alt text"></p>
+<p><img src="image-7.png" alt="alt text"></p>
+<p>Dan kita mendapatkan error pertama.</p>
+<p><img src="image-8.png" alt="alt text"></p>
+<p>Dan setelah mengatur storage dari 500 GB ke 465 GB, kita akhirnya berhasil.</p>
+<p><img src="image-9.png" alt="alt text"></p>
+<p>Oke yang saya ingin kalian tahu adalah harddisk ini memiliki kapasitas 500GB, Gigabytes, sedangkan untuk konfigurasi ditanyakan GiB atau Gibibytes. 500GB itu setara dengan sekitar 465GiB.</p>
+<h2 id="buat-user-baru">Buat User Baru</h2>
+<p>Saya tidak mau mengulangi awur-awuranku seperti kemarin jadi saya memutuskan untuk membuat user baru yang menjalankan Jellyfin, bukan root yang menjalankannya. Saya juga mau user baru ini masuk ke grup sudoers. Untuk itu saya perlu browsing dan menemukan 2 tutorial yang membantu</p>
+<ul>
+<li><a href="https://phoenixnap.com/kb/linux-adduser">https://phoenixnap.com/kb/linux-adduser</a></li>
+<li><a href="https://phoenixnap.com/kb/how-to-create-sudo-user-on-ubuntu">https://phoenixnap.com/kb/how-to-create-sudo-user-on-ubuntu</a></li>
+</ul>
+<p>Voila! Begini hasil command-lineku</p>
+<p><img src="image-10.png" alt="alt text"></p>
+<h2 id="instalasi-jellyfin">Instalasi Jellyfin</h2>
+<p>Di <a href="https://jellyfin.org/docs/general/installation/linux#debian--ubuntu-and-derivatives">dokumentasi instalasi</a>, saya perlu menggunakan curl tapi saat kuinstall saya mendapat error.</p>
+<p><code>E: Could not open lock file /var/lib/dpkg/lock-frontend - open (13: Permission denied) E: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), are you root?</code></p>
+<p>Oke, saatnya mencari info lagi&hellip;ternyata saya belum menambahkan <code>sudo</code>&hellip;</p>
+<p><img src="image-11.png" alt="alt text"></p>
+<p>Sekarang saatnya menjalankan command untuk instalasi.</p>
+<p><img src="image-12.png" alt="alt text"></p>
+<p>YESSSS.</p>
+<h2 id="konfigurasi-awal">Konfigurasi Awal</h2>
+<p>Sorry, saya lupa untuk screenshot waktu konfigurasi GUI tadi, tetapi kurang lebih saya diminta untuk buat username, password, dan konfigurasi media library. Saya langsung menyalin file film dari PC ke Aurelia (CT yang saya buat)</p>
+<p><img src="image-13.png" alt="alt text"></p>
+<p>Masalahnya, film itu tidak terdeteksi di Media Library dan ternyata Path dari media library itu salah.</p>
+<p><img src="image-14.png" alt="alt text"></p>
+<p>Dan ternyata setelah melakukan scan, film AADC langsung muncul. YAAAY.</p>
+<p><img src="image-15.png" alt="alt text"></p>
+<p>Saya bisa langsung nonton film-nya.</p>
+<p><img src="image-16.png" alt="alt text"></p>
+<blockquote>
+<p>Rangga, yang kamu lakukan ke saya itu&hellip;<em>jahat</em>.</p></blockquote>
+<h2 id="penutup">Penutup</h2>
+<p>Sekarang saya bisa nonton film tapi saya masih harus menambahkan film-nya via SFTP. Di masa depan saya ingin supaya ada automatisasi dan saya tidak perlu menunggu untuk mengunduh film baru. Hehehe, terima kasih sudah membaca. Ciao.</p>
+
+        </section>
+        <div class="post-tags">
+          
+          
+          
+        </div>
+      </div>
+
+      
+      
+    </div>
+
+    </article>
+</main>
+<footer>
+  <div style="display:flex"><a class="soc" href="mailto:yttriumemulsion@gmail.com" rel="me" title="Email"><svg class="feather">
+   <use href="/svg/feather-sprite.51cf5647cb1987f769b616558f2620fd9423d72058490231b391bf6aa3744b55.svg#mail" />
+</svg></a><a class="border"></a><a class="soc" href="https://hardcover.app/@slidingsoul" rel="me" title="Hardcover"><svg class="feather">
+   <use href="/svg/feather-sprite.51cf5647cb1987f769b616558f2620fd9423d72058490231b391bf6aa3744b55.svg#book" />
+</svg></a><a class="border"></a><a class="soc" href="https://www.facebook.com/dabito.wisewealth" rel="me" title="Facebook"><svg class="feather">
+   <use href="/svg/feather-sprite.51cf5647cb1987f769b616558f2620fd9423d72058490231b391bf6aa3744b55.svg#facebook" />
+</svg></a><a class="border"></a></div>
+  <div class="footer-info">
+    2025  © BuddyHeartO |  <a
+      href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
+  </div>
+</footer>
+
+</div>
+    </body>
+</html>

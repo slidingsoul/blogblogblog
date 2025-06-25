@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© BuddyHeartO</copyright>
-    <lastBuildDate>Sat, 21 Jun 2025 10:45:12 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 25 Jun 2025 12:20:43 +0700</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Home Lab Revamp Part 3</title>
+      <link>http://localhost:1313/posts/hl-revamp-part-3/</link>
+      <pubDate>Wed, 25 Jun 2025 12:20:43 +0700</pubDate>
+      <guid>http://localhost:1313/posts/hl-revamp-part-3/</guid>
+      <description>&lt;h2 id=&#34;sink-in&#34;&gt;Sink In&lt;/h2&gt;&#xA;&lt;p&gt;Saya perlu merogoh kocek yang lumayan untuk membeli harddisk baru karena yang lama ternyata palsu. Yang baru menghabiskan sekitar 300 ribu rupiah termasuk enclosure dan pemasangan.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;Untitled.jpg&#34; alt=&#34;alt text&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Setelah saya coba hubungkan ke port USB, saya bisa merasakan &amp;ldquo;detak jantung&amp;rdquo; dari harddisk itu. Yang saya maksud detak jantung adalah perputaran atau rotasi dari cakram harddisk. Harddisk saya yang bohong-bohongan itu, yang bahkan sejak saya hidupkan tidak pernah saya merasakan detaknya. Ini penampakannya, by the way.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Homelab Revamp Part 2</title>
       <link>http://localhost:1313/posts/hl-revamp-part-2/</link>
