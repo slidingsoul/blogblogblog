@@ -2,6 +2,7 @@
 date = '2025-06-25T12:20:43+07:00'
 draft = false
 title = 'Home Lab Revamp Part 3'
+tags = ['indonesia', 'homelab']
 +++
 ## Sink In
 Saya perlu merogoh kocek yang lumayan untuk membeli harddisk baru karena yang lama ternyata palsu. Yang baru menghabiskan sekitar 300 ribu rupiah termasuk enclosure dan pemasangan.

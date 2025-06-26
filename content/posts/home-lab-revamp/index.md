@@ -2,7 +2,7 @@
 date = '2025-06-18T00:17:11+07:00'
 draft = false
 title = 'Home Lab Revamp'
-tags = ['indonesia', 'it']
+tags = ['indonesia', 'homelab']
 +++
 ## Dibuat di Surga
 Aku memutuskan untuk merombak _setup_ home-lab ku. Kenapa? Karena ada banyak conflict antara service yang berjalan. Aku mencoba memasang Pi-Hole untuk eksperimen DNS dan _Ad-Blocker_ tapi ternyata itu conflict dengan Apache Web Server. Aku tidak mau mematikan Apache karena FreshRSS, Nextcloud berjalan di atas itu. 

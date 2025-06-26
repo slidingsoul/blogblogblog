@@ -2,6 +2,7 @@
 date = '2025-06-26T13:48:50+07:00'
 draft = false
 title = 'Home Lab Revamp Part 4'
+tags = ['indonesia', 'homelab']
 +++
 ## Bagian Pengantar
 Saya mau pergi ke Kota yang tidak pernah tidur sebentar lagi, tetapi saya masih mau streaming musik-musik yang ada di Oasis (server Navidrome). Saya tidak terlalu tertarik untuk menonton film jika sedang berlibur. Tapi, saya masih butuh musik untuk didengar tiap harinya. Oleh karena itu, saya akan melakukan konfigurasi Tailscale (sesuatu yang pernah saya lakukan sebelumnya) agar saya masih bisa mengakses Oasis meski di luar jaringan rumah.

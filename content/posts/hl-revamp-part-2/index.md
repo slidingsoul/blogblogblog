@@ -2,7 +2,7 @@
 date = '2025-06-21T10:45:12+07:00'
 draft = false
 title = 'Homelab Revamp Part 2'
-tags = ['indonesia', 'it']
+tags = ['indonesia', 'homelab']
 +++
 ## Kata Pengantar
 Oke kita sekarang udah berhasil jalanin Syncthing dengan buat sesi tmux. Masalahnya kalau mati listrik aku perlu buat sesi tmux, trus jalanin `syncthing serve` lagi. Malas

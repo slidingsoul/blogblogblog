@@ -2,7 +2,7 @@
 date = '2025-05-03T11:42:00+07:00'
 draft = false
 title = 'Home Lab'
-tags = ['english', 'it']
+tags = ['english', 'homelab']
 +++
 ## Background
 
