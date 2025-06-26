@@ -4,6 +4,9 @@ title = 'ALPHASE'
 theme = 'archie'
 copyright = "© BuddyHeartO"
 
+# Favicon
+favicon = '/static/favicon.ico'
+
 # Pagination
 [pagination]
 pagerSize = 2
