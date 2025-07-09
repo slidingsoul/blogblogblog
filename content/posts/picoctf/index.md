@@ -4,12 +4,15 @@ draft = true
 title = 'PicoCTF'
 tags = ['english', 'it']
 +++
+## **SPOILER**
+I don't recommend you read this article before you _actually_ try to solve some of the problems! Try your best first dude. You won't learn anything if you just jump to the answer without any thinking.
+
 ## Flag
 Here's my write-up of my solutions when I try to solve some of PicoCTF's problems. You can use `Ctrl+F` to search. I will try my best to explain my thought process. I actually solved some of them but I want to document my solution so that people know. The flag will be in the form of picoCTF{flag}.
 
 ## Easy
 I'll try to solve the easy ones.
-### DISKO 1, 7 July 2025
+### DISKO 1, Started and Finished 7 July 2025
 We're challenged to find the flag in a disk image. To download the disk image, we use `wget` command and put in the url.
 
 ![alt text](image.png)
@@ -21,7 +24,7 @@ As we can see, the disk image is in the format of `dd.gz` to it's compressed in 
 And I happened to know that we can use `strings` command to find human-readable string in a byte-type file
 
 ![alt text](image-2.png)
-### Fantasy CTF, 7 July 2025
+### Fantasy CTF, Started and Finished 7 July 2025
 First, I tried to run the command provided.
 
 ![alt text](image-3.png)
@@ -30,7 +33,7 @@ I was shown a story...I'll try to follow along. And after trials and errors, it 
 
 ![alt text](image-4.png)
 
-### RED, 7 July 2025
+### RED, Started and Finished 7 July 2025
 
 So I downloaded the `red.png` and checked the metadata
 
@@ -47,7 +50,7 @@ I went to Cyberchef and put `Extract LSB` to my recipe. From the hint, `Red?Ged?
 I noticed that from the output there's a repeating pattern. I suspect that it's a Base64
 
 ![alt text](image-8.png)
-### rust fixme 1, WIP
+### rust fixme 1, Started 7 July 2025, Finished 9 July 2025
 I downloaded the file using wget and extracted it using gunzip and tar
 
 ![alt text](image-9.png)
@@ -58,4 +61,47 @@ OK, but first we have to install Rust, just follow the instruction from [this pa
 
 ![alt text](image-11.png)
 
-Great, the errors are display. Now it's time to edit. I added a semicolon, corrected "return" statement, and fixed println. Unfortunately my VM in homelab ran out of memory and I had to fix reboot it. We're back to VM in my PC because well...my homelab has insufficient RAM (To be continued).
+Great, the errors are displayed. Now it's time to edit. I added a semicolon, corrected "return" statement, and fixed println. Unfortunately my VM in homelab ran out of memory and I had to fix reboot it. We're back to VM in my PC because well...my homelab has insufficient RAM.
+
+I'm back, let's continue. From my little programming experience (C mainly), I had to make sure that every line ends with semicolon (;), if we want to exit from a function use "return". For the println part, I searched and found that I had to use curly braces ({}). To compile, execute `cargo build` in the working directory and the compiled file is in `./target/debug`.
+
+![alt text](image-12.png)
+
+### rust fixme 2, Started 9 July 2025
+First, the spadework just like _rust fixme 1_
+
+![alt text](image-13.png)
+
+I like to build/compile the project and then see the errors.
+
+![alt text](image-14.png)
+
+And from the errors we got the hint. I fixed some of them. Another error.
+
+![alt text](image-15.png)
+
+(To be continued)
+
+### Binary Search, Started and Finished 9 July 2025
+
+I immediately ssh'ed to the instance. I had to guess a number ranging from 1 to 1000 under 10 guesses. Hinted from the title, I had to add the upper range and lower range and divide it by 2, effectively doing a Binary Search.
+
+![alt text](image-16.png)
+
+Now we do between 1 and 500
+
+![alt text](image-17.png)
+
+Fast forward, it took me 10 guesses, whew
+
+![alt text](image-18.png)
+
+### WebDecode, Started and Finished 9 July 2025
+
+I was given a website and I had to find it using web inspector just like the detail of the problem suggested. I tried inspecting `index.html` and found nothing. But something caught my eye in `about.html`
+
+![alt text](image-19.png)
+
+Yeah it must be base64 again.
+
+![alt text](image-20.png)
