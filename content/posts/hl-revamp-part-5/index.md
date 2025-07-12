@@ -1,7 +1,7 @@
 +++
 date = '2025-06-27T11:20:23+07:00'
 draft = false
-title = 'Home lab Revamp Part 5'
+title = 'Home Lab Revamp Part 5'
 +++
 ## Pengantar
 Saya masih membutuhkan bantuan SFTP dan FileZilla untuk memindahkan film-film yang ada di harddisk PC ke harddisk dari Renner atau lebih tepatnya Aurelia (container untuk Jellyfin). Rencana awalnya saya ingin membuat skrip untuk mengautomatisasi pengunduhan film, jadi saya tinggal memasukkan URL sebagai argumen yang bisa langsung terunduh di Aurelia tanpa perlu membiarkan PC saya menyala untuk menunggu unduhan selesai. Namun, ternyata ada beberapa film yang unduhannya dijaga oleh CAPTCHA. Untuk itu saya masih perlu membuktikan bahwa saya adalah manusia (😬) sebelum mengunduh. 

@@ -1,7 +1,7 @@
 +++
 date = '2025-06-21T10:45:12+07:00'
 draft = false
-title = 'Homelab Revamp Part 2'
+title = 'Home Lab Revamp Part 2'
 tags = ['indonesia', 'homelab']
 +++
 ## Kata Pengantar

@@ -1,6 +1,6 @@
 +++
-date = '2025-07-07T12:02:41+07:00'
-draft = true
+date = '2025-07-12T13:17:46+07:00'
+draft = false
 title = 'PicoCTF'
 tags = ['english', 'it']
 +++

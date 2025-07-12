@@ -2,7 +2,7 @@
 date = '2025-05-04T10:47:59+07:00'
 draft = false
 title = 'Reading Journey'
-tags = ['indonesia', 'reading']
+tags = ['indonesia', 'lifestyle']
 +++
 ![](https://assets-a1.kompasiana.com/items/album/2025/01/02/doomscrolling-6776a71934777c42f3161225.jpg?t=o&v=780)
 ## Tinta, Kertas, Jilid
