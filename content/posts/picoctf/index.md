@@ -1,5 +1,5 @@
 +++
-date = '2025-07-12T13:17:46+07:00'
+date = '2025-07-14T22:27:28+07:00'
 draft = false
 title = 'PicoCTF'
 tags = ['english', 'it']
@@ -105,3 +105,27 @@ I was given a website and I had to find it using web inspector just like the det
 Yeah it must be base64 again.
 
 ![alt text](image-20.png)
+
+### Ph4nt0m 1ntrud3r, Started and Finished 14 July 2025
+
+I was given a PCAP file and it's about network traffic. I didn't know a damn thing about it but from my conscience I knew it has something to do with Wireshark. So I opened it in Wireshark.
+
+![alt text](image-21.png)
+
+From the hint, it's all about time so I sorted it by time and starts decoding the last part of each payload _from the bottom_ and I got this
+
+![alt text](image-22.png)
+
+And it's suspiciously a base64 and I decoded it with cyberchef and got the flag
+
+![alt text](image-23.png)
+
+## Verify, Started and Finished 14 July 2025
+
+I ssh'ed into the server and utilized the hints. Now I know that checksum and SHA256 is used the verify integrity of a file.
+
+`sha256sum ./checksum.txt ./files/*`
+
+Now I can view all the checksum from all files now I have to find one with the correct checksum, a file which checksum matches the content of checksum.txt. Grep to the rescue
+
+![alt text](image-24.png)
