@@ -2,6 +2,7 @@
 date = '2025-06-30T16:17:06+07:00'
 draft = false
 title = 'Home Lab Revamp Part 6'
+tags = ['indonesia', 'homelab']
 +++
 ## Pengantar
 Ingat saat saya konfigurasi aurelia? Ternyata saya salah memilih lvm sehingga yang terpilih bukanlah vasopeso melainkan local-lvm untuk menyimpan film. Untuk menambah garam pada luka, saya juga sudah terlanjur konfigurasi samba pada local-lvm itu. Saya akan memperbaikinya di unggahan ini.

@@ -2,6 +2,7 @@
 date = '2025-07-03T13:48:45+07:00'
 draft = false
 title = 'Home Lab Revamp Part 7'
+tags = ['indonesia', 'homelab']
 +++
 ## Pengantar
 Seperti yang kalian sudah tahu, saya biasanya membuat Linux Container untuk deploy _satu_ aplikasi yang saya butuhkan. Semisal, untuk Navidrome saya deploy 1 container, untuk Jellyfin juga saya deploy 1 container, untuk syncthing juga saya deploye 1 container. Saya takut nanti akan terjadi hal yang bernama _container sprawl_. Apa itu _container sprawl_? Sebenarnya itu terminologi yang saya buat-buat berdasarkan _VM sprawl_ sih, _VM sprawl_ sendiri adalah [kondisi di mana banyak sekali VM yang tidak terkontrol di suatu lingkungan virtual](https://www.ibm.com/think/topics/vm-sprawl). Di kasusku bukannya VM melainkan CT, saya harap kalian mengerti maksudku. Sekarang saya berpikir untuk membuat 1 CT lagi (semoga saja jadi yang terakhir) dan _from now on_ memasang segala aplikasi yang mau saya pasang di CT itu. Supaya menghindari konfigurasi yang berlebihan dan saling tabrak, saya akan menggunakan teknologi yang bernama Docker dan juga Portainer untuk memudahkan konfigurasi. Aplikasi pertama yang saya ingin install adalah PiHole, DNS service untuk memblokir iklan-iklan di traffic. Saya sendiri sudah menggunakan uBlock Origin sebagai adblocker tetapi saya rasa lebih baik untuk memblokir iklan bahkan sebelum diterima oleh browser dan komputer saya.
