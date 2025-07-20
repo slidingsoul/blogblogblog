@@ -1,5 +1,5 @@
 +++
-date = '2025-07-14T22:27:28+07:00'
+date = '2025-07-20T22:13:53+07:00'
 draft = false
 title = 'PicoCTF'
 tags = ['english', 'it']
@@ -12,7 +12,7 @@ Here's my write-up of my solutions when I try to solve some of PicoCTF's problem
 
 I'll try to solve the easy ones.
 
-## IN RANDOM ORDER
+## IN RANDOM ORDER/DIFFICULTY
 
 ### DISKO 1, Started and Finished 7 July 2025
 We're challenged to find the flag in a disk image. To download the disk image, we use `wget` command and put in the url.
@@ -296,3 +296,46 @@ Similar to what lies within.
 
 ![alt text](image-62.png)
 
+### Mod 26, Started and Finished 20 July 2025
+
+From the description, I knew it was a ROT13
+
+![alt text](image-63.png)
+
+### 13, Started and Finished 20 July 2025
+
+Same as Mod 26
+
+![alt text](image-64.png)
+
+### hashcrack, Started and Finished 20 July 2025
+
+![alt text](image-65.png)
+
+It's so easy, actually. You can use [this tool](https://hashes.com) to identify and crack the password. The first hash was using MD5 and the password is _password123_, the second one was SHA1, _letmein_, and the final one was SHA256, _qwerty098_
+
+### interencdec, Started and Finished 20 July 2025
+
+I dowloaded the file and cat'd it
+
+![alt text](image-66.png)
+
+base64, I assumed
+
+![alt text](image-67.png)
+
+I extracted the string enclosed by \' and got something interesting
+
+![alt text](image-68.png)
+
+![alt text](image-69.png)
+
+### The Numbers, Started and Finished 20 July 2025
+
+The picture is this
+
+![alt text](image-70.png)
+
+Heh, a piece of cake! The algorithm is called "A1Z26" and the number itself represents the alphabet order, A is 1, B is 2, etc.
+
+![alt text](image-71.png)
