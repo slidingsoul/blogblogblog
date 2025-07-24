@@ -339,3 +339,143 @@ The picture is this
 Heh, a piece of cake! The algorithm is called "A1Z26" and the number itself represents the alphabet order, A is 1, B is 2, etc.
 
 ![alt text](image-71.png)
+
+### rotation, Started and Finished 21 July 2025
+
+![alt text](image-72.png)
+
+### vigenere, Started and Finished 21 July 2025
+
+![alt text](image-73.png)
+
+### Sleuthkit Intro, Started and Finished 21 July 2025
+
+I downloaded the file, gunzipped it and this time I used `mmls` command to check the length of a partition
+
+![alt text](image-74.png)
+
+### Sleuthkit Apprentice, Started and Finished 22 July 2025
+
+It's similar to intro but with extra steps. This time I had to list the file name using `fls`
+
+![alt text](image-75.png)
+
+I tried to list the /home directory but it was empty
+
+![alt text](image-76.png)
+
+I tried to check the root and bingo!
+
+![alt text](image-77.png)
+
+### Disk, disk, sleuth! II, Started and Finished 22 July 2025
+
+Similar to the previous apprentice problem.
+
+![alt text](image-78.png)
+
+![alt text](image-79.png)
+
+![alt text](image-80.png)
+
+![alt text](image-81.png)
+
+`picoCTF{f0r3ns1c4t0r_n0v1c3_82489dbf}`
+
+### Operation Orchid, Started and Finished 22 July 2025
+
+I downloaded the disk image and gunzipped it, just like usual. I checked it with `mmls` and the offset is now 411648
+
+![alt text](image-82.png)
+
+![alt text](image-83.png)
+
+![alt text](image-84.png)
+
+Now the file in encrypted, _enc_ means encrypted but we can always check the `.ash_history`
+
+![alt text](image-85.png)
+
+Here's the tricky part, I had to find a way to copy the file (or the content of the file) flag.txt.enc from disk image to the current working directory
+
+![alt text](image-86.png)
+
+Now for the decryption...
+
+![alt text](image-87.png)
+
+### Guess My Cheese (Part 1), Started and Finished 24 July 2025
+
+I had to try many times for this one to get a lucky encryption strategy.
+
+![alt text](image-88.png)
+
+I noticed that it might be a Caesar Cipher, let's confirm
+
+![alt text](image-89.png)
+
+Let's try another one. by the way I had to browse for kinds of cheese
+
+![alt text](image-90.png)
+
+![alt text](image-91.png)
+
+Now for the moment of truth
+
+![alt text](image-92.png)
+
+![alt text](image-93.png)
+
+### basic-mod1, Started and Finished 24 July 2025
+
+Here's the script I used to solve the problem
+
+```
+msg = "PUT THE ENCRYPTED CONTENT HERE"
+
+str_list = msg.split(" ")
+num_list = []
+
+for str1 in str_list:
+    num_list.append(int(str1) % 37)
+    
+result = ""
+
+for num in num_list:
+    if num >= 0 and num <= 25:
+        result = result + chr(num + 97)
+    elif num >= 26 and num <= 35:
+        result = result + chr(num+22)
+    elif num == 36:
+        result = result + "_"
+
+print("picoCTF{" + result + "}")
+```
+
+### basic-mod2, Started and Finished 24
+
+```
+msg = "PUT ENCRYPTED CONTENT HERE"
+def modInverse(A, M):
+    for X in range(1, M):
+        if (((A % M) * (X % M)) % M == 1):
+            return X
+    return -1
+str_list = msg.split(" ")
+num_list = []
+inv_mod_list = []
+for str1 in str_list:
+    num_list.append(int(str1) % 41)
+for num in num_list:
+    inv_mod_list.append(modInverse(num, 41))
+result = ""
+for num in inv_mod_list:
+    if num >= 1 and num <= 26:
+        result = result + chr(num + 96)
+    elif num >= 27 and num <= 36:
+        result = result + chr(num+21)
+    elif num == 37:
+        result = result + "_"
+
+print("picoCTF{" + result + "}")
+```
