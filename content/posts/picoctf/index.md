@@ -1,5 +1,5 @@
 +++
-date = '2025-07-20T22:13:53+07:00'
+date = '2025-07-24T11:14:40+07:00'
 draft = false
 title = 'PicoCTF'
 tags = ['english', 'it']
@@ -452,7 +452,7 @@ for num in num_list:
 print("picoCTF{" + result + "}")
 ```
 
-### basic-mod2, Started and Finished 24
+### basic-mod2, Started and Finished 24 July 2025
 
 ```
 msg = "PUT ENCRYPTED CONTENT HERE"
