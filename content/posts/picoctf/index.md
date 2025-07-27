@@ -1,5 +1,5 @@
 +++
-date = '2025-07-24T11:14:40+07:00'
+date = '2025-07-27T22:28:41+07:00'
 draft = false
 title = 'PicoCTF'
 tags = ['english', 'it']
@@ -479,3 +479,34 @@ for num in inv_mod_list:
 
 print("picoCTF{" + result + "}")
 ```
+### caesar, Started and Finished 27 July 2025
+
+I downloaded the message
+
+![alt text](image-94.png)
+
+Okay let's do some experiment using ROT
+
+![alt text](image-95.png)
+
+### Flags, Started and Finished 27 July 2025
+
+I downloaded the file and it had shown me a bunch of flags with curly braces
+
+![alt text](image-96.png)
+
+I just found that that it's International Maritime Signal Flags and I tried to decrypt it using [this wikipedia](https://en.wikipedia.org/wiki/International_maritime_signal_flags). Notice that for number parts of the flag, NATO version of numbers is used.
+
+![alt text](image-97.png)
+
+### Tapping, Started and Finished 27 July 2025
+
+It's just a morse code!
+
+![alt text](image-98.png)
+
+### Easy1, Started and Finished 27 July 2025
+
+It's just a Vigenere Cipher!
+
+![alt text](image-99.png)
