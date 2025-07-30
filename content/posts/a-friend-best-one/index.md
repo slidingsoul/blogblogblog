@@ -1,6 +1,6 @@
 +++
 date = '2025-07-30T20:23:19+07:00'
-draft = true
+draft = false
 title = 'A Friend, Best One'
 tags = ['indonesia']
 +++
