@@ -1,6 +1,6 @@
 +++
 date = '2025-07-12T13:17:46+07:00'
-draft = true
+draft = false
 title = 'Integritas Riset'
 tags = ['indonesia']
 +++

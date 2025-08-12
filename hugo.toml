@@ -4,25 +4,11 @@ title = 'ALPHASE'
 theme = 'archie'
 copyright = "© BuddyHeartO"
 
-# Favicon
-favicon = '/static/favicon.ico'
-
 # Pagination
 [pagination]
 pagerSize = 2
 
-# Image Cache
-
-[caches]
-  [caches.images]
-    dir = ':cacheDir/images'
-
 # Social Tags
-
-[[params.social]]
-name = "Email"
-icon = "mail"
-url = "mailto:yttriumemulsion@gmail.com"
 
 [[params.social]]
 name = "Hardcover"
@@ -30,9 +16,17 @@ icon = "book"
 url = "https://hardcover.app/@slidingsoul"
 
 [[params.social]]
-name = "Facebook"
-icon = "facebook"
-url = "https://www.facebook.com/dabito.wisewealth"
+name = "MyDramaList"
+icon = "list"
+url = "https://mydramalist.com/profile/slidingsoul5"
+
+[[params.social]]
+name = "Letterboxd"
+icon = "film"
+url = "https://letterboxd.com/slidingsoul/"
+
+[params]
+  mode = "toggle"
 
 [[menu.main]]
 name = "Home"

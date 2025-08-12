@@ -3,6 +3,7 @@ date = '2025-07-27T22:28:41+07:00'
 draft = false
 title = 'PicoCTF'
 tags = ['english', 'it']
+toc = true
 +++
 ## **SPOILER**
 I don't recommend you read this article before you _actually_ try to solve some of the problems! Try your best first dude. You won't learn anything if you just jump to the answer without any thinking.
