@@ -2,7 +2,6 @@ baseURL = 'https://alphase.netlify.app/'
 languageCode = 'en-us'
 title = 'ALPHASE'
 theme = 'archie'
-copyright = "© BuddyHeartO"
 
 # Pagination
 [pagination]
@@ -27,6 +26,7 @@ url = "https://letterboxd.com/slidingsoul/"
 
 [params]
   mode = "toggle"
+  subtitle = "There are many things that I would like to say to you but I don't know how..."
 
 [[menu.main]]
 name = "Home"
