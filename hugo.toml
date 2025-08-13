@@ -3,12 +3,14 @@ languageCode = 'en-us'
 title = 'ALPHASE'
 theme = 'archie'
 
+# Favicon
+favicon = '/static/favicon.ico'
+
 # Pagination
 [pagination]
 pagerSize = 2
 
 # Social Tags
-
 [[params.social]]
 name = "Hardcover"
 icon = "book"

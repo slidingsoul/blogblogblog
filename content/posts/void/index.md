@@ -1,8 +1,8 @@
 ---
 date: '2025-08-12T22:22:29+07:00'
 title: 'Void'
-draft: true
-tags: ['indonesia', 'english'] 
+draft: false
+tags: ['indonesia', 'english', 'lifestyle'] 
 ---
 
 ## My mother is right, it's the damn phone
@@ -20,9 +20,6 @@ Kalau dibandingin zaman dulu, kita hidup lebih gampang. Tetapi meski gampang ent
 Gue memutuskan untuk memutus rantai ini. Gue engga bakal seekstrim di [Eddy Burback](https://www.youtube.com/watch?v=nnsyGSTKlw0) but here are what I'm planning to do.
 - Phone Decentralization
 - Denial of Service
-- Time Boxing
-- Don't watch the story
-- Don't see the comments
 - Others
 
 ## Phone Decentralization
@@ -34,6 +31,7 @@ Gue make HP untuk...semuanya. HP itu penting coy, kalau kagak ada di kantong, at
 - Ngelihat catetan
 - Autentikator, gue pake Microsoft Authenticator
 - Baca buku, _real no fake_ di HP gue terpasang Moon Reader+ dan gw pernah namatin salah satu bukunya Ika Natassa pakai itu
+
 Sisanya paling gue lihat YouTube di HP waktu rebahan.
 
 Phone Decentralization di sini maksud gw adalah menggunakan HP gue sebagai fungsi-fungsi pokok. Fungsi pokok yang gue maksud adalah ini
@@ -47,4 +45,22 @@ Udah gitu doang. Trus fungsi yang lain gimana? Gue masih butuh denger lagu, baca
 - Sosial media: Ini bakal dibahas di Denial of Service
 
 ## Denial of Service
+Ini bukan tentang cara shutdown suatu sistem tetapi ini tentang cara gue untuk berpuasa dari aplikasi-aplikasi yang "setengah sadar" gue pake. Kalau gabut, gue biasanya buka IG, di IG pun sekarang gue udah engga separah dulu, sampe di Explore, sekarang gue cuma menikmati posts yang ada di Home aja. Namun, itu masih sama aja menyita waktu gue. Oleh karena itu, gue memutuskan untuk menghapus aplikasi seperti
+- Instagram
+- Facebook
+- YouTube
+- LinkedIn
 
+dan berbagai media sosial di HP gue. Dua medsos yang cuma boleh gue pake adalah Bluesky karena di situ lumayan sepi dan Discord karena gue kadang dapet info kerjaan magang dari situ. Sama di WA gue juga berusaha sebaik mungkin buat kagak ngelihat story (ini udah gue coba di IG dari lama dan lumayan membantu) sama reply story-nya.
+
+## Others
+Nah, ini bagian yang susah.
+> Waktu yang udah gue beresin, yang engga dipake buat scrolling sama checking ponsel ga jelas sekarang mau dibuat ape?
+Sebenernya engga susah-susah amat sih. Gue udah banyak kerjaan/hobi mulai dari
+- Magang
+- Skripsi
+- Kerjain Google Cloud Skills Boost
+- Nulis di blog ini, hehe
+- Menyelesaikan [Want to Read](https://hardcover.app/@slidingsoul/books/want-to-read)
+- Menyelesaikan [Watchlist](https://letterboxd.com/slidingsoul/watchlist/)
+But well, waktu gue terbatas sih...jadi harusnya gue menggunakan waktu ini sebaik mungkin. Gue rasa itu juga yang perlu lo lakuin, terutama kalau lo masih muda. Kalau lo masih siswa, mahasiswa belajar yang bener. The real world is cruel & unforgiving.
