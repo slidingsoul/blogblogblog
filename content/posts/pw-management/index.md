@@ -1,7 +1,7 @@
 ---
 date: '2025-09-01T11:05:37+07:00'
 title: 'Password Management'
-draft: true
+draft: false
 tags: ['indonesia', 'homelab']
 ---
 Dulu, pas gue masih kecil, akun gue sedikit. Paling juga akun email dan Facebook. Gue ga terlalu memusingkan tentang password karena gue bisa inget (dulu bahkan gue pakai 1 password di banyak akun). Fast forward ke 2025, zaman berubah. Gue udah punya banyak akun online service mulai dari social media (IG, LinkedIn, Bluesky, Hardcover, Letterboxd), MOOC (Udemy, Coursera), E-Commerce (Tokopedia, Shopee), dan masih banyak lagi. Gue udah jadi cyber-security aware sekarang dan menganggap bahwa password harus beda di antara 1 akun dengan yang lainnya agar ketika 1 akun _compromised_, yang lain tetap bisa aman.
