@@ -39,6 +39,7 @@ Phone Decentralization di sini maksud gw adalah menggunakan HP gue sebagai fungs
 - Communication
 - Autentikator
 - Catatan
+
 Udah gitu doang. Trus fungsi yang lain gimana? Gue masih butuh denger lagu, baca buku, social media, sayangnya. Gue punya alternatifnya
 - Denger lagu: Somehow, gue punya HP Nokia jadul yang bisa setel lagu dan _ada headphone jack-nya_. Lagunya sendiri bisa ditransfer via Bluetooth. Gue bakal mindahin lagu yang pengen gue denger secara berkala dari PC ke mp3 player ini.
 - Baca buku: Gue punya e-reader dan buku fisik gue masih banyak yang belum kebaca cuy. Jadi gue bakal pakai itu e-reader dan memprioritaskan membaca buku fisik.
@@ -63,4 +64,5 @@ Sebenernya engga susah-susah amat sih. Gue udah banyak kerjaan/hobi mulai dari
 - Nulis di blog ini, hehe
 - Menyelesaikan [Want to Read](https://hardcover.app/@slidingsoul/books/want-to-read)
 - Menyelesaikan [Watchlist](https://letterboxd.com/slidingsoul/watchlist/)
+
 But well, waktu gue terbatas sih...jadi harusnya gue menggunakan waktu ini sebaik mungkin. Gue rasa itu juga yang perlu lo lakuin, terutama kalau lo masih muda. Kalau lo masih siswa, mahasiswa belajar yang bener. The real world is cruel & unforgiving.
