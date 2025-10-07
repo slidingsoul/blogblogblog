@@ -28,7 +28,7 @@ url = "https://letterboxd.com/slidingsoul/"
 
 [params]
   mode = "toggle"
-  subtitle = "There are many things that I would like to say to you but I don't know how..."
+  subtitle = "Aku ingin menjadi cukup kuat. Kemarin aku telah menjadi kuat, tetapi itu tidak cukup."
 
 [[menu.main]]
 name = "Home"
