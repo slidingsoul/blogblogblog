@@ -25,3 +25,12 @@ Aku tahu perasaan seperti ini datang dan pergi, bagai lebah yang menyintas mengh
 Kurang lebih seperti pemrosesan foto pada zaman dahulu. Dan kalian tahu kan, kalau fotografer analog tidak dapat melihat hasil jepretan hingga fotonya selesai dicetak?
 
 Aku menerapkan rangka kerja yang sama untuk perasaanku dan beranggapan bahwa perasaan seperti foto dalam film. Ya, seperti itu. Aku adalah fotografer perasaanku sendiri.
+
+## Apa arti keluarga?
+Keluarga adalah orang yang terhubung dengan ikatan darah atau hukum...aku rasa hukum adalah kata yang terlalu berat, mungkin lebih tepatnya adalah administrasi negara. Selama seseorang hidup atau selama pernyataan keluarganya masih absah, dia selalu menjadi anggota keluarga. Setiap anggota memiliki tugasnya masing-masing, tipikal keluarga elementer memiliki anggota dan tugas sebagai berikut:
+- Ayah: mencari nafkah
+- Ibu: mengurus perihal
+- Anak: belajar dan membantu orang tua
+Menjalani kehidupan berkeluarga membutuhkan pengorbanan. Bahkan bagi anak, pengorbanan yang dibuatnya seringkali tidaklah sesuai dengan kehendak mereka (anak tidak bisa memilih dilahirkan di dunia ini atau punya orang tua siapa). Namun, hal itu memiliki keindahan tersendiri menurutku. Orang tua juga sama berat pengorbanannya. Orang tua (yang baik) ...yang sudah menjalani kehidupan lebih jauh, pasti menginginkan bahwa anaknya mengalami hidup yang lebih baik dengan mengurangi langkah yang salah dan memilih jalur yang paling lancar. Kehidupan yang ditata dengan janat itu...sayangnya tidak sesuai dengan kehendak anak. Ini pun menjadi keindahan.
+
+Ingatlah, keluargaku, "Life is a tragedy when seen in close-up, but a comedy in long-shot." Yeah this quote always applies.
