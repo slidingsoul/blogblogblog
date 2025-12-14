@@ -2,7 +2,7 @@
 date: '2025-10-25T09:52:19+07:00'
 title: 'Selumbar 1'
 draft: false
-tags: ["selumbar"]
+tags: ["babble"]
 ---
 > Mengapakah engkau melihat selumbar di mata saudaramu, sedangkan balok di dalam matamu tidak engkau ketahui? Bagaimanakah engkau dapat berkata kepada saudaramu: Biarlah aku mengeluarkan selumbar itu dari matamu, padahal ada balok di dalam matamu. Hai orang munafik, keluarkanlah dahulu balok dari matamu, maka engkau akan melihat dengan jelas untuk mengeluarkan selumbar itu dari mata saudaramu.
 > 

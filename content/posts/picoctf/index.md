@@ -2,7 +2,7 @@
 date = '2025-07-27T22:28:41+07:00'
 draft = false
 title = 'PicoCTF'
-tags = ['english', 'it']
+tags = ['english', 'ctf']
 toc = true
 +++
 ## **SPOILER**
