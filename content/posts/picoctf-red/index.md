@@ -2,7 +2,6 @@
 date: '2025-12-14T09:32:36+07:00'
 title: 'picoCTF - RED'
 draft: false
-toc: true
 tags: ["ctf"]
 ---
 Heya! This is my first post migrating from [this post](../picoctf) so you guys don't get overwhelmed by the length of the post.
@@ -11,7 +10,7 @@ Heya! This is my first post migrating from [this post](../picoctf) so you guys d
 
 - URL: https://play.picoctf.org/practice/challenge/460
 - Title: RED
-- Tags: Easy, Forensics, picoCTF, browser_webshell_solvable
+- Tags: Easy, Forensics, picoCTF 2025, browser_webshell_solvable
 - Author: SHUAILIN PAN (LECONJUROR)
 - _Started: 7 July 2025_
 - _Solved: 7 July 2025_
@@ -181,8 +180,86 @@ Double `=` indicates that it is a result of base64 encoding. So I decoded it and
 
 `picoCTF{r3d_1s_th3_ult1m4t3_cur3_f0r_54dn355_}`
 
---- 
+###### About LSB in Steganography
 
+Least Significant Bit is a binary digit which affects the least from the overall value.
+
+Before we start using binary, let's start with some analogy. Say you have Rp354.789,00. Then I take the first digit of your money and subtract it by one so you now have Rp254.789,00. How angry are you? You must be furious right?
+
+I return your money back but now, instead of taking the first digit, I take the second digit of your money, subtract it by one so you know have Rp344.789,00. Okay, I understand that you're mad at me but you're not as angry as before right?
+
+So, to conclude, which digit should I take from your money to make you least angry at me? Well, the last digit. I think you won't be bothered if I take Rp1 from you .
+
+This is a key concept of LSB. Now change from decimal to binary.
+
+11101 (or 57 in decimal)
+
+If I flip the first digit, it would be 01101 or 25 in decimal. It takes 32 out of it. However, if I flip the last digit, it would be 11100, which is 56 in decimal. The difference is only one from 57.
+
+This is a basic of LSB in Steganography. Steganography is information hiding and in this context, the information is hidden in a digital photo. I want you to know that one PNG photo has a lot of pixels. You would know how many pixels there are by checking the dimension or resolution, e.g. 1920x1080, 720x720, etc. Every pixel is just a block of a solid color and the color is determined by three values. Red value (R), Green value (G), and Blue value (B). Each range from 0 to 255 or 00000000 to 11111111 in binary.
+
+Okay I want to give a very simple example here. Let's say I have 1x3 PNG file, each pixel has this exact RGB value.
+
+(255, 90, 15). Each pixel would look exactly like this (please ignore the blacky edge).
+
+![alt text](<Screenshot 2025-12-15 at 12-12-21 RGB Color Picker.png>)
+
+So in binary, the image will have the information of
+
+pixel 1: (11111111,01011010,00001111)
+
+pixel 2: (11111111,01011010,00001111)
+
+pixel 3: (11111111,01011010,00001111)
+
+
+And I have a string of "A" that I want to hide within the pixels. A is 65 in ASCII or 01000001. Now I take each bit of that and put it on the last bit of R, G, and B value for each pixel
+
+R1: 11111111 ==> 11111110 (change last bit from 1 to 0)
+
+G1: 01011010 ==> 01011011 (0 to 1)
+
+B1: 00001111 ==> 00001110 (1 to 0)
+
+R2: 11111111 ==> 11111110 (1 to 0)
+
+G2: 01011010 ==> 01011010 (0 to 0, remains unchanged)
+
+B2: 00001111 ==> 00001110 (1 to 0)
+
+R3: 11111111 ==> 11111110 (1 to 0)
+
+G3: 01011010 ==> 01011011 (0 to 1)
+
+B3: 00001111 ==> 00001111 (no bit left, remains unchanged)
+
+Now, the image will have information of
+
+pixel 1: (11111110,01011011,00001110)
+
+pixel 2: (11111110,01011010,00001110)
+
+pixel 3: (11111110,01011011,00001111)
+
+
+or
+
+pixel 1: (254, 91, 14), it will look like this
+![alt text](./pixel1after.png)
+
+pixel 2: (254, 90, 14)
+![alt text](./pixel2after.png)
+
+pixel 3: (254, 91, 15)
+![alt text](./pixel3after.png)
+
+You can barely notice the difference but I can use Cyberchef to extract and get the "A". The "A" is there but it's hidden
+
+###### Nuggets 
 I just found out you don't have to use your mouse to select all of the output in the terminal. Just install `xclip` package and pipe your result to `xclip -sel clip` .e.g. `cat file | xclip -sel clip` you then can paste it wherever.
 
 I also just found out about that `identify -verbose` command, before then I used https://exif.tools/ or https://www.metadata2go.com/.
+
+
+###### Source
+- https://mti.binus.ac.id/2017/06/08/steganografi-dengan-least-significant-bit-lsb/
