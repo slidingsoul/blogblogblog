@@ -29,6 +29,8 @@ url = "https://letterboxd.com/slidingsoul/"
 [params]
   mode = "toggle"
   subtitle = "Aku ingin menjadi cukup kuat. Kemarin aku telah menjadi kuat, tetapi itu tidak cukup."
+  mathjax = true
+  katex = true
 
 [[menu.main]]
 name = "Home"

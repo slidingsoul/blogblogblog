@@ -3,7 +3,6 @@ date: '2025-10-09T10:59:08+07:00'
 title: 'Time Never Stop Moving'
 draft: false
 tags: ['indonesia', 'babble']
-toc: true
 ---
 Hey! Aku menulis ini dalam keadaan melankoli dan kesepian di rumah. Sejujurnya dalam keadaanku, aku mengalami mood-swing yang ekstrim dari hari ke hari. Satu hari aku hanya bisa makan, tidur, dan bermain game. Aku jatuh ke dalam jurang keputusasaan. Di hari yang lain aku bisa mengerjakan tugas-tugasku sebagai mahasiswa. Aku terbangun dengan penuh harapan. Aku tidak tahu apakah yang terjadi pada diriku ini normal atau tidak, aku tidak tahu apakah orang lain pernah mengalami hal yang sama. Aku terlalu takut untuk bertanya...
 
