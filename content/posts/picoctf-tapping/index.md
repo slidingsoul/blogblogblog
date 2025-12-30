@@ -33,3 +33,13 @@ And this is the part encapsulated within `{}`
 The final flag is
 
 ```PICOCTF{M0RS3C0D31SFUNC91F6206}```
+
+---
+
+###### About Morse Code
+
+As far as I know, Morse Code is a "language" used to translate telegraph transmission to a sequence of letters (and numbers if needed). These characters are coded to combinations of "dots", and "dashes". We can utilize electrical pulse, flute sound, and even eyeblinks to transmit Morse Code. Here's the translation.
+
+![alt text](image-3.png)
+
+I want you to remember the easiest which is "SOS" or ...---... or dot-dot-dot-dash-dash-dash-dot-dot-dot. It's easy and it's very important in grave danger.
