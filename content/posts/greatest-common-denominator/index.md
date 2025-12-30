@@ -163,4 +163,4 @@ def find_gcd(a, b):
   return a
 ```
 
-Jadi lebih clean lagi kan? Oke deh, have a good one!
+Jadi lebih clean lagi kan? Oke deh, have a good one! Dan ingatlah, nikmatilah "kisi-kisi" itu selagi diberikan kepadamu.
