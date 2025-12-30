@@ -93,7 +93,7 @@ def find_gcd(a, b):
   return greater
 ```
 
-Lalu, kalau kalian perhatikan, $q% itu engga terpakai sama sekali, bisa dibuang.
+Lalu, kalau kalian perhatikan, $q$ itu engga terpakai sama sekali, bisa dibuang.
 
 ```
 def find_gcd(a, b):
