@@ -11,9 +11,7 @@ tags: ["ctf"]
 - Author: Jeffery John
 - _Started: 14 July 2025_
 - _Solved: 14 July 2025_
-- Description: People keep trying to trick my players with imitation flags. I want to make sure they get the real thing! I'm going to provide the SHA-256 hash and a decrypt script to help you know that my flags are legitimate.
-
-Additional details will be available after launching your challenge instance.
+- Description: People keep trying to trick my players with imitation flags. I want to make sure they get the real thing! I'm going to provide the SHA-256 hash and a decrypt script to help you know that my flags are legitimate. Additional details will be available after launching your challenge instance.
 
 First, I ssh'ed into the server using given username and password after I ran the instance. I listed all the files in the home folder and ~/files
 
