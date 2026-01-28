@@ -1,13 +1,13 @@
 ---
 date: '{{ .Date }}'
 title: '{{ replace .File.ContentBaseName "-" " " | title }}'
-tags: [tag names]
+tags: ["ctf"]
 ---
 
-- URL: https://play.picoctf.org/practice/challenge/460
-- Title: RED
-- Tags: Easy, Forensics, picoCTF 2025, browser_webshell_solvable
-- Author: SHUAILIN PAN (LECONJUROR)
-- _Started: 7 July 2025_
-- _Solved: 7 July 2025_
-- Description: RED, RED, RED, RED
+- URL: https://play.picoctf.org/practice/challenge/
+- Title: 
+- Tags: 
+- Author: 
+- _Started: July 2025_
+- _Solved: July 2025_
+- Description: 
