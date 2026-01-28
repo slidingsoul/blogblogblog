@@ -1,6 +1,6 @@
 ---
 date: '2026-01-25T14:45:09+07:00'
-title: 'picoCTF WebDecode'
+title: 'picoCTF - WebDecode'
 tags: ["ctf"]
 ---
 
