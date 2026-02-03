@@ -1,6 +1,6 @@
 ---
 date: '{{ .Date }}'
 title: '{{ replace .File.ContentBaseName "-" " " | title }}'
-tags: ["ctf"]
+tags: []
 draft: true
 ---
